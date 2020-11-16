@@ -1,0 +1,23 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 28px;
+}

@@ -1,0 +1,255 @@
+#aboutApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 35vh;
+    margin-bottom: var(--separateSections);
+}
+
+
+
+
+/* Title */
+#aboutApp-title{
+    color: var(--blue);
+    font-size: 5vh;
+    text-transform: capitalize;
+}
+
+/* Subtitle */
+#aboutApp-subtitle{
+    width: 60vh;
+
+    font-size: 2.5vh;
+
+    text-align: center;
+}
+
+
+
+
+
+/* Content */
+#aboutApp-content{
+    height: 50vh;
+
+    display: flex;
+
+    margin-top: 6vh;
+}
+
+
+/* Description */
+#aboutApp-content-description{
+    width: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-right: 20px;
+}
+
+/* Title */
+#aboutApp-content-description-title{
+    font-size: 2.8vh;
+}
+
+/* Text */
+#aboutApp-content-description-text{
+    font-size: 2.5vh;
+}
+
+/* UL */
+#aboutApp-content-description-ul{
+    
+}
+#aboutApp-content-description-ul li{
+    display: flex;
+    align-items: center;
+
+    font-size: 2.6vh;
+
+    margin-bottom: 10px;
+}#aboutApp-content-description-ul li:last-child{
+    margin-bottom: 0;
+}
+/* Icon */
+#aboutApp-content-description-ul li i{
+    color: var(--blue);
+    font-size: 3vh;
+    font-weight: bold;
+
+    margin-right: 5px;
+}
+
+#aboutApp-content-description-downloadBtn{
+    width: 20vh;
+
+    color: #fff;
+    font-size: 2.5vh;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+
+    padding: 1.5vh 0;
+}#aboutApp-content-description-downloadBtn:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* Video */
+#aboutApp-content-video {
+    height: 100%;
+    
+    position: relative;
+}
+#aboutApp-content-video i{
+    color: #fff;
+    font-size: 8vh;
+
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    cursor: pointer;
+
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.25s;
+}#aboutApp-content-video i:hover{
+    color: var(--blue);
+    background-color: #fff;
+}
+#aboutApp-content-video img{
+    height: 100%;
+}
+
+
+
+@media (max-width: 1024px){
+    #aboutApp{
+        margin-top: 45vh;
+    }
+
+
+
+
+
+    /* Content */
+    #aboutApp-content{
+        height: auto;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+    /* Description */
+    #aboutApp-content-description{
+        width: 70%;
+        
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 5vh;
+    }
+    /* Text */
+    #aboutApp-content-description-text{
+        margin-bottom: 2.5vh;
+    }
+    /* Download button */
+    #aboutApp-content-description-downloadBtn{
+        margin-top: 2.5vh;
+    }
+
+
+
+
+    
+    /* Image */
+    #aboutApp-content-video{
+        width: 400px;
+    }
+    #aboutApp-content-video img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 813px){
+    #aboutApp{
+        margin-top: 52vh;
+    }
+}
+
+@media (max-width: 614px){
+    #aboutApp{
+        margin-top: 59vh;
+    }
+
+
+
+
+
+    /* Video */
+    #aboutApp-content-video{
+        width: 300px;
+    }
+    /* Icon */
+    #aboutApp-content-video i{
+        font-size: 28px;
+
+        padding: 8px;
+    }
+}
+
+@media (max-width: 563px){
+    #aboutApp{
+        margin-top: 66vh;
+    }
+}
+
+@media (max-width: 500px){
+    #aboutApp{
+        margin-top: 85vh;
+    }
+
+}
+
+@media (max-width: 407px){
+    #aboutApp{
+        margin-top: 102vh;
+    }
+
+
+
+
+
+    /* Subtitle */
+    #aboutApp-subtitle{
+        width: auto;
+    }
+
+
+
+
+
+    /* Video */
+    #aboutApp-content-video{
+        width: 200px;
+    }
+    /* Icon */
+    #aboutApp-content-video i{
+        font-size: 25px;
+
+        padding: 6px;
+    }
+}
