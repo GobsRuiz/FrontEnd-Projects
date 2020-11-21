@@ -1,0 +1,128 @@
+#header{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../../images/header/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    position: relative;
+
+    margin-bottom: 9vh;
+}
+
+
+
+
+/* Title and subtitle */
+#header h1, #header h6{
+    color: var(--primary-colorText);
+    text-transform: uppercase;
+}
+#header h1{
+    font-size: 12vh;
+}
+#header h6{
+    color: var(--secondary-colorText);
+    font-size: 3vh;
+    font-weight: 300;
+
+    margin-top: -1vh;
+    margin-bottom: 12vh;
+}
+
+
+
+/* Nav */
+#header-nav{
+}
+#header-nav a{
+    color: var(--secondary-colorText);
+    font-size: 2.5vh;
+    text-transform: uppercase;
+
+    padding: 3vh;
+}
+#header-nav a:hover{
+    color: var(--primary-colorText)
+}
+#header-nav #header-nav-activeLink{
+    color: var(--primary-colorText);
+    border: 0.4vh solid #fff;
+    border-radius: 4.5vh;
+}
+
+/* Responsive nav */
+#header-responsiveNav-burguer{
+    display: none;
+}
+#header-responsiveNav-nav{
+    display: none;
+}
+
+
+
+
+/* Responsive */
+@media(max-width: 700px){
+    /* Header */
+    /* Nav */
+    #header-nav{
+        display: none
+    }
+
+    /* Responsive nav */
+    /* Icon burguer */
+    #header-responsiveNav-burguer{
+        display: block;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        cursor: pointer;
+
+        padding: 20px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    #header-responsiveNav-burguer span{
+        width: 30px;
+        height: 2px;
+
+        display: block;
+
+        background-color: var(--secondary-colorText);
+
+        margin-bottom: 4px;
+    }#header-responsiveNav-burguer span:last-child{
+        margin-bottom: 0;
+    }
+
+    /* Nav */
+    #header-responsiveNav-nav{
+        width: 0;
+        height: 100vh;
+
+        display: block; 
+
+        background-color: var(--third);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #header-responsiveNav-nav a{
+        display: none;
+        
+        color: var(--primary-colorText);
+        font-size: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        
+        padding: 15px 10px;
+    }
+}

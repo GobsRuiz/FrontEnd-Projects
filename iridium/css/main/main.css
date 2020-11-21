@@ -1,0 +1,58 @@
+#main{
+    display: grid;
+    grid-template-areas: 
+        "posts rightSidebar"
+        "posts2 posts2"
+    ;
+    grid-template-columns: 70%;
+
+    box-sizing: border-box;
+}
+
+/* Sections width */
+#posts{
+    grid-area: posts;
+
+    padding-left: 9vh;
+}
+#rightSidebar{
+    grid-area: rightSidebar;
+
+    padding-right: 9vh;
+}
+#posts2{
+    grid-area: posts2;
+}
+
+
+
+
+
+/* Responsive */
+@media(max-width: 750px){
+    #main{
+        grid-template-areas: 
+            "posts"
+            "rightSidebar"
+            "posts2"
+        ;
+        grid-template-columns: 100%;
+    }
+
+    #posts,
+    #rightSidebar{
+        width: 90%;
+
+        box-sizing: border-box;
+
+        margin: 0 auto;
+    }
+    #posts{
+        padding-left: 0;
+
+        margin-bottom: 9vh;
+    }
+    #rightSidebar{
+        padding-right: 0;
+    }
+}

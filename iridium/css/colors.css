@@ -1,0 +1,11 @@
+:root{
+    --primary: #111111;
+    --secondary: #e6e6e6;
+    --third: #e95d3c;
+    --fourth: #1a1a1a;
+
+    --primary-colorText: #fff;
+    --secondary-colorText:  #ffffff80;
+    --third-colorText: #444444;
+    --fourth-colorText: #b3b3b3;
+}
