@@ -1,0 +1,35 @@
+/* Cards */
+#news-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Card */
+.news-card{
+    flex: 1;
+    max-width: 65vh;
+
+    border: 5px solid var(--fourth);
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+}.news-card:last-child{
+    margin-bottom: 0;
+}
+.news-card-title{
+    text-align: center;
+
+    font-size: 3.5vh;
+}
+.news-card-image{
+    width: 100%;
+}
+.news-card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+
+    padding: 0 10px;
+}

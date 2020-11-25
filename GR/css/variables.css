@@ -1,0 +1,15 @@
+:root{
+
+
+
+
+    /* Colors */
+    --primary: #EC1C24;
+    --secondary: #e6e6e6;
+    --third: #fff;
+    --fourth: rgb(26, 26, 26);
+    --primary-gradient: linear-gradient(to right, #e52d27, #b31217);
+
+    /* Text colors */
+    --primary-textColor: #fff;
+}

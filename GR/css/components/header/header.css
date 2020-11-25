@@ -1,0 +1,121 @@
+/* Header */
+#header{
+    height: 100vh;
+}
+
+
+
+
+
+/* Top */
+#header-top{
+    width: 100%;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--thord);
+    border-bottom: 1vh solid var(--primary);
+}
+/* Div content */
+#header-top-content{
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4vh;
+}
+
+
+/* Logo */
+#header-top-logo{
+    height: 100%;
+}
+#header-top-logo img{
+    height: 100%;
+}
+
+
+/* Menu */
+#header-top-menu ul{
+    display: flex;
+}
+#header-top-menu ul li{
+    border-radius: 10px;
+
+    padding: 10px 20px;
+    position: relative;
+}#header-top-menu ul li:hover{
+    background-color: var(--primary);
+}
+#header-top-menu ul li a{
+    font-size: 3vh;
+    color: black;
+}
+/* Sub menu */
+#header-top-menu ul .sub-menu{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#header-top-menu ul ul{
+    display: none;
+
+    background-color: var(--third);
+    border: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#header-top-menu ul li:hover ul{
+    display: block;
+}
+#header-top-menu ul ul li{
+    width: 35vh;
+
+    text-align: center;
+
+    border-radius: 0;
+}
+#header-top-menu ul ul li a{
+    font-size: 2.5vh;
+}
+
+
+
+/* User account */
+#header-top-userAccount{
+    height: 35px;
+
+    background-color: var(--fourth);
+    border-radius: 50%;
+    cursor: pointer;
+
+    padding: 10px;
+}#header-top-userAccount:hover{
+    background-color: var(--primary);
+}
+#header-top-userAccount i{
+    color: var(--third);
+    font-size: 35px;
+}
+
+
+
+
+/* Background images */
+#header-backgroundImages{
+    height: 85vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transition: all 0.25s;
+}
