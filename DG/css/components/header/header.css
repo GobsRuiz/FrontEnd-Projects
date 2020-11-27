@@ -91,6 +91,15 @@
 #header-top-menu ul ul li a{
     font-size: 2.5vh;
 }
+/* Responsive meu */
+/* Icon */
+#header-responsiveMenu-icon{
+    display: none;
+}
+/* Nav */
+#header-responsiveMenu-nav{
+    display: none;
+}
 
 
 /* User account */
