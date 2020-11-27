@@ -5,6 +5,18 @@
     /* Border radius */
     --borderRadius: 3vh;
 
+    /* Components */
+        /* Header */
+        /* Header top */
+        --headerTop_width: 15vh;
+        --headerTopAnimationScrolling_width: 10vh;
+
+        /* Header top user account */
+        --headerTopUserAccount_padding: 2vh;
+        --headerTopUserAccountScrolling_padding: 1.7vh;
+        --headerTopUserAccountIcon_size: 4vh;
+        --headerTopUserAccountIconScrolling_size: 3vh;
+
     /* Home */
         /* Main */
         /* body */

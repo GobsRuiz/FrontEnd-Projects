@@ -15,12 +15,15 @@
 #buyOurGame .section-title p{
     color: var(--third);
 }
+#buyOurGame .section-title p{
+    font-size: 2.8vh;
+}
 
 
 
 /* Content */
 #buyOurGame-content{
-    height: 320px;
+    height: 50vh;
     
     display: flex;
     flex-direction: column;
@@ -34,7 +37,6 @@
 
     margin-bottom: 5vh;
 }
-
 
 /* Platforms */
 #buyOurGame-content-platforms{
@@ -51,7 +53,7 @@
 
     cursor: pointer;
 
-    margin-right: 2vh;
+    margin: 0 2vh;
 }
 .buyOurGame-platform p{
     color: var(--third);

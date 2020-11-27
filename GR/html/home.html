@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
 
+    <!-- HTML -->
+    <link rel="stylesheet" href="../css/html.css">
+
+    <!-- Components -->
+        <!-- Footer -->
+        <link rel="stylesheet" href="../css/components/footer/footer.css">
+            <!-- Modal languages -->
+            <link rel="stylesheet" href="../css/components/footer/modalLanguages.css">
+
+
     <!-- Home -->
         <!-- Header -->
         <link rel="stylesheet" href="../css/components/header/header.css">
@@ -31,9 +41,6 @@
             <link rel="stylesheet" href="../css/home/main/news.css">
             <!-- Career GR -->
             <link rel="stylesheet" href="../css/home/main/careerDG.css">
-
-        <!-- Footer -->
-        <link rel="stylesheet" href="../css/components/footer/footer.css">
 </head>
 <body>
 
@@ -343,9 +350,11 @@
 
         <!-- Bottom -->
         <div id="footer-bottom">
-            <div id="footer-bottom-languages">
-                IDIOMA
-            </div>
+            <button id="footer-bottom-languages">
+                <i class="material-icons">
+                    language
+                </i>
+            </button>
 
             <p id="footer-bottom-copyright">
                 © 2020 DG. Todos os direitos reservados.
@@ -353,15 +362,70 @@
 
             <button id="footer-bottom-backtop">
                 Voltar ao topo
+                <img src="../images/components/footer/arrow_up.svg" alt="">
             </button>
         </div>
     </footer>
 
 
 
+    <!-- Modals -->
+    <!-- Languages -->
+    <section id="modal-languages">
+        <div id="modal-languages-content">
+            <i class="material-icons" id="modal-languages-close">
+                close
+            </i>
+
+            <h1 id="modal-languages-title">
+                Selecione seu idioma
+            </h1>
+
+            <div id="modal-languages-languageOptions">
+                <button>
+                    Deutsch
+                </button>
+                <button>
+                    English
+                </button>
+                <button>
+                    Español
+                </button>
+                <button>
+                    Français
+                </button>
+                <button>
+                    Português do Brasil
+                </button>
+                <button>
+                    Русский
+                </button>
+                <button>
+                    Türkçe
+                </button>
+                <button>
+                    日本語
+                </button>
+                <button>
+                    中文 (简体字)
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Scripts -->
-    <!-- Header -->
-    <script src="../js/home/header/backgroundImages.js"></script>
+    <!-- Components -->
+        <!-- Footer -->
+        <!-- Modal languages -->
+        <script src="../js/component/footer/modalLanguages.js"></script>
+        <!-- Back to the top -->
+        <script src="../js/component/footer/backToTheTop.js"></script>
+
+        <!-- Header -->
+        <script src="../js/component/header/headerTopAnimationScrolling.js"></script>
+        <script src="../js/home/header/backgroundImages.js"></script>
     
     <!-- Main -->
         <!-- News -->

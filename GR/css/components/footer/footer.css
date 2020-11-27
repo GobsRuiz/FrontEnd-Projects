@@ -80,6 +80,11 @@
 
 /* Languages */
 #footer-bottom-languages{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
     color: var(--third);
 }
 
@@ -91,5 +96,20 @@
 
 /* Backtop */
 #footer-bottom-backtop{
+    display: flex;
+    align-items: center;
 
+    background-color: var(--third);
+    border-radius: 2.5vh;
+    cursor: pointer;
+
+    padding-left: 2vh;
+    padding-right: 1vh;
+}#footer-bottom-backtop:hover{
+    background-color: var(--primary);
+}
+#footer-bottom-backtop img{
+    width: 5vh;
+
+    transform: rotate(180deg);
 }
