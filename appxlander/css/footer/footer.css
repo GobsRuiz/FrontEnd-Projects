@@ -66,7 +66,25 @@
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
+
+    margin-bottom: 3vh;
 }
 #footer span{
     font-weight: bold;
+}
+
+
+
+
+/* Developed by */
+#footer-developedBy{
+}
+#footer-developedBy p{
+    color: #fff;
+    font-size: 2vh;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5vh;
+}#footer-developedBy p:last-child {
+    margin-bottom: 0;
 }
