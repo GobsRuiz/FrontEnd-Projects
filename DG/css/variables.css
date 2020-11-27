@@ -7,15 +7,21 @@
 
     /* Components */
         /* Header */
-        /* Header top */
-        --headerTop_width: 15vh;
-        --headerTopAnimationScrolling_width: 10vh;
+            /* Header top */
+            --headerTop_width: 15vh;
+            --headerTop_width_negativeValue: -35vh;
+            --headerTopAnimationScrolling_width: 10vh;
+            --headerTopAnimationScrolling_width_negativeValue: -30vh;
 
-        /* Header top user account */
-        --headerTopUserAccount_padding: 2vh;
-        --headerTopUserAccountScrolling_padding: 1.7vh;
-        --headerTopUserAccountIcon_size: 4vh;
-        --headerTopUserAccountIconScrolling_size: 3vh;
+            /* Header top user account */
+            --headerTopUserAccount_padding: 2vh;
+            --headerTopUserAccountScrolling_padding: 1.7vh;
+            --headerTopUserAccountIcon_size: 4vh;
+            --headerTopUserAccountIconScrolling_size: 3vh;
+
+            /* Responsive menu */
+            --headerResponsiveMenuNav_width: 40vh;
+            --headerResponsiveMenuNav_width_negativeValue: -40vh;
 
     /* Home */
         /* Main */
