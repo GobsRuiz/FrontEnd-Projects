@@ -38,17 +38,49 @@
 /* Social networks */
 #footer-top-socialNetworks{
     height: 45%;
+
     display: flex;
+    align-items: center;
 }
-#footer-top-socialNetworks img{
+.footer-top-socialNetworks-facebook, 
+.footer-top-socialNetworks-instagram, 
+.footer-top-socialNetworks-twitter, 
+.footer-top-socialNetworks-youtube{
+    width: 4vh;
     height: 100%;
-    
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     cursor: pointer;
 
-    margin: 0 5px;
-    transition: background-color 0.2s, transform 0.2s;
-}#footer-top-socialNetworks img:hover{
-    transform: scale(1.04);
+    margin: 0 0.8vh;
+    transition: background-image 0.25s, transform 0.25s;
+}.footer-top-socialNetworks-facebook:hover,
+.footer-top-socialNetworks-instagram:hover,
+.footer-top-socialNetworks-twitter:hover,
+.footer-top-socialNetworks-youtube:hover{
+    transform: scale(1.05);
+}
+.footer-top-socialNetworks-facebook{
+    background-image: url("../../../images/components/footer/facebook.svg");
+}.footer-top-socialNetworks-facebook:hover{
+    background-image: url("../../../images/components/footer/facebook-red.svg");
+}
+.footer-top-socialNetworks-instagram{
+    background-image: url("../../../images/components/footer/instagram.svg");
+}.footer-top-socialNetworks-instagram:hover{
+    background-image: url("../../../images/components/footer/instagram-red.svg");
+}
+.footer-top-socialNetworks-twitter{
+    background-image: url("../../../images/components/footer/twitter.svg");
+}.footer-top-socialNetworks-twitter:hover{
+    background-image: url("../../../images/components/footer/twitter-red.svg");
+}
+.footer-top-socialNetworks-youtube{
+    background-image: url("../../../images/components/footer/youtube.svg");
+}.footer-top-socialNetworks-youtube:hover{
+    background-image: url("../../../images/components/footer/youtube-red.svg");
 }
 
 
@@ -80,12 +112,28 @@
 
 /* Languages */
 #footer-bottom-languages{
+    width: 30vh;
+
     display: flex;
     align-items: center;
 
     cursor: pointer;
-
+}
+#footer-bottom-languages i,
+#footer-bottom-languages span{
     color: var(--third);
+    font-size: 2vh;
+}
+#footer-bottom-languages i{
+    font-size: 3vh;
+}
+#footer-bottom-languages hr{
+    width: 0.3vh;
+    height: 2vh;
+
+    background-color: var(--primary);
+
+    margin: 0 0.5vh;
 }
 
 /* Copyright */
@@ -96,8 +144,11 @@
 
 /* Backtop */
 #footer-bottom-backtop{
+    width: 30vh;
+
     display: flex;
     align-items: center;
+    justify-content: center;
 
     background-color: var(--third);
     border-radius: 2.5vh;
