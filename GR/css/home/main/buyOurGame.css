@@ -1,0 +1,62 @@
+#buyOurGame{
+    background-color: var(--secondary);
+
+    /* margin-top: var(--separateSections); */
+    padding: var(--main-padding);
+}
+
+
+
+/* Title and description/text */
+#buyOurGame .section-title h1{
+    padding: 0;
+}
+#buyOurGame .section-title h1,
+#buyOurGame .section-title p{
+    color: var(--third);
+}
+
+
+
+/* Content */
+#buyOurGame-content{
+    height: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Content title */
+#buyOurGame-content-title h2{
+    color: #fff;
+    font-size: 5vh;
+
+    margin-bottom: 5vh;
+}
+
+
+/* Platforms */
+#buyOurGame-content-platforms{
+    display: flex;
+    justify-content: space-around;
+}
+/* Platform */
+.buyOurGame-platform{
+    display: flex;
+    align-items: center;
+}
+.buyOurGame-platform img{
+    width: 15vh;
+
+    cursor: pointer;
+
+    margin-right: 2vh;
+}
+.buyOurGame-platform p{
+    color: var(--third);
+    font-size: 3.5vh;
+    cursor: pointer;
+}.buyOurGame-platform p:hover{
+    color: var(--primary);
+}

@@ -1,13 +1,22 @@
 :root{
+    /* Separate secitons */
+    --separateSections: 10vh;
 
+    /* Border radius */
+    --borderRadius: 3vh;
+
+    /* Home */
+        /* Main */
+        /* body */
+        --main-padding: 0 4.5vh;
 
 
 
     /* Colors */
     --primary: #EC1C24;
-    --secondary: #e6e6e6;
+    --secondary: rgb(26, 26, 26);
     --third: #fff;
-    --fourth: rgb(26, 26, 26);
+    --fourth: ;
     --primary-gradient: linear-gradient(to right, #e52d27, #b31217);
 
     /* Text colors */

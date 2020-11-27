@@ -1,8 +1,11 @@
 var headerBackgroudnImages = document.getElementById("header-backgroundImages");
 var urls = [
-    '../images/header/background-images/rdr2.jpg',
-    '../images/header/background-images/smite.jpg',
-    '../images/header/background-images/gtav.jpeg',
+    '../images/home/header/background-images/rdr2.jpg',
+    '../images/home/header/background-images/smite.jpg',
+    '../images/home/header/background-images/pubg.jpg',
+    '../images/home/header/background-images/gtav.jpeg',
+    '../images/home/header/background-images/fortnite.jpg',
+    '../images/home/header/background-images/valorant.jfif',
 ]
 var index = 0;
 
