@@ -78,3 +78,15 @@
     font-size: 3.2vh;
     cursor: pointer;
 }
+
+
+
+
+
+/* Responsive */
+@media(max-width: 1024px){
+    /* Image */
+    .news-card-image img{
+        object-fit: cover;
+    }
+}
