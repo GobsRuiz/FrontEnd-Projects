@@ -156,8 +156,8 @@
     /* Responsive menu */
     /* Icon */
     #header-responsiveMenu-icon{
-        width: 6vh;
-        height: 5vh;
+        width: 30px;
+        height: 25px;
 
         display: flex;
         flex-direction: column;
@@ -167,7 +167,7 @@
     }
     #header-responsiveMenu-icon span{
         width: 100%;
-        height: 1vh;
+        height: 3px;
 
         display: block;
 
@@ -181,7 +181,7 @@
         display: none;
     }
     #header-responsiveMenu-icon.change span:nth-child(3){
-        transform: rotate(45deg) translateX(-15px);
+        transform: rotate(45deg) translateX(-16px);
     }
 
     /* Nav */

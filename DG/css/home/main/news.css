@@ -90,3 +90,18 @@
         object-fit: cover;
     }
 }
+
+@media(max-width: 750px){
+    /* Row */
+    .news-cards-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cards separation */
+    /* Row and card */
+    .news-cards-row,
+    .news-card{
+        margin-bottom: 5vh;
+    }
+}

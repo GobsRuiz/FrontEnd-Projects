@@ -1,6 +1,10 @@
 #footer{
     background-color: var(--secondary);
     border-top: 1vh solid var(--primary);
+
+    position: relative;
+    z-index: 99;
+    transition: margin-top 0.25s;
 }
 
 
@@ -23,9 +27,10 @@
 
 /* Navigation */
 #footer-top-nav{
-
+    display: block ;
 }
-#footer-top-nav a{
+#footer-top-nav a,
+#footer-responsiveMenu a{
     color: #fff;
     font-size: 2.5vh;
 
@@ -34,6 +39,12 @@
     background-color: var(--primary);
     border-radius: var(--borderRadius);
 }
+/* Responsive menu */
+#footer-responsiveMenu,
+#footer-top-openResponsiveMenu{
+    display: none;
+}
+
 
 /* Social networks */
 #footer-top-socialNetworks{
@@ -99,7 +110,7 @@
 
 /* bottom */
 #footer-bottom{
-    height: 10vh;
+    height: 14vh;
 
     display: flex;
     justify-content: space-between;
@@ -137,7 +148,8 @@
 }
 
 /* Copyright */
-#footer-bottom-copyright{
+#footer-bottom-copyright p,
+#footer-bottom-copyright p a{
     color: var(--third);
     font-size: 2vh;
 }
@@ -145,22 +157,175 @@
 /* Backtop */
 #footer-bottom-backtop{
     width: 30vh;
+}
+#footer-bottom-backtop button{
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    font-size: 2vh;
     background-color: var(--third);
     border-radius: 2.5vh;
     cursor: pointer;
 
     padding-left: 2vh;
     padding-right: 1vh;
-}#footer-bottom-backtop:hover{
+}#footer-bottom-backtop button:hover{
     background-color: var(--primary);
 }
 #footer-bottom-backtop img{
-    width: 5vh;
+    width: 4vh;
 
     transform: rotate(180deg);
 }
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    /* Footer top */
+    /* Menu */
+    #footer-top-nav{
+        display: none;
+    }
+    /* Responsive menu */
+    #footer-responsiveMenu{
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        background-color: var(--primary);
+
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: bottom 0.25s;
+        z-index: 9;
+    }
+    /* Button */
+    #footer-top-openResponsiveMenu{
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer-top-openResponsiveMenu span{
+        width: 100%;
+        height: 3px;
+
+        background-color: var(--third);
+
+        transition: transform 0.25s;
+    }
+    #footer-top-openResponsiveMenu.change span:nth-child(1){
+        transform: rotate(-45deg) translateX(-19px);
+    }
+    #footer-top-openResponsiveMenu.change span:nth-child(2){
+        display: none;
+    }
+    #footer-top-openResponsiveMenu.change span:nth-child(3){
+        transform: rotate(45deg) translateX(-19px);
+    }
+
+
+
+    /* Footer bottom */
+    /* Backtop */
+    #footer-bottom-backtop img{
+        width: 15%;
+    }
+}
+
+@media(max-width: 800px){
+    /* Footer top */
+    /* Responsive menu */
+    #footer-responsiveMenu{
+        height: 100px;
+    }
+}
+
+@media(max-width: 700px){
+    /* Footer bottom */
+    #footer-bottom{
+        height: auto;
+
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-areas:
+		"language backtop"
+		"copyright copyright"
+		;
+        grid-template-columns: auto;
+        grid-template-rows: 50px;
+    }
+    #footer-bottom-languages{
+        grid-area: language;
+    }
+    #footer-bottom-copyright{
+        grid-area: copyright;
+        
+        text-align: center;
+    }
+    #footer-bottom-backtop{
+        grid-area: backtop;
+    }
+    /* Languages and backtop */
+    #footer-bottom-languages,
+    #footer-bottom-backtop{
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 400px){
+    /* Footer top */
+    #footer-top-logo{
+        height: 40px;
+    }
+
+
+
+    /* Footer bottom */
+    #footer-bottom{
+        grid-template-areas: 
+        "language"
+        "backtop"
+        "copyright"
+        ;
+        grid-template-rows: 80px;
+        grid-template-columns: 100%;
+    }
+    #footer-bottom-languages{
+        grid-area: language; 
+        width: 100%; 
+        justify-content: center;
+    }
+    #footer-bottom-copyright{
+        grid-area: copyright; 
+        text-align: center;
+
+        margin-top: 25px;
+    }
+    #footer-bottom-backtop{
+        grid-area: backtop;
+        width: 100%;
+    }#footer-bottom-backtop button{
+        width: 150px;
+        margin: 0 auto;
+    }
+    /* Languages and backtop */
+    #footer-bottom-languages,
+    #footer-bottom-backtop{
+        margin: 0;
+    }
+}   

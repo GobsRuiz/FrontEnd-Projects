@@ -44,6 +44,8 @@
 /* Text and button*/
 #careerDG-content-text,
 #careerDG-content-btn{
+    font-size: 2vh;
+    
     position: relative;
     z-index: 9;
 }

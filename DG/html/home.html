@@ -42,7 +42,7 @@
             <!-- Career GR -->
             <link rel="stylesheet" href="../css/home/main/careerDG.css">
 </head>
-<body>
+<body style="position: relative;">
 
     <!-- Header -->
     <header id="header">
@@ -418,6 +418,11 @@
                     Suporte ao jogador
                 </a>
             </nav>
+            <button id="footer-top-openResponsiveMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
             <div id="footer-top-socialNetworks">
                 <div class="footer-top-socialNetworks-facebook"></div>
@@ -441,16 +446,48 @@
                 </span>
             </button>
 
-            <p id="footer-bottom-copyright">
-                © 2020 DG. Todos os direitos reservados.
-            </p>
+            <div id="footer-bottom-copyright">
+                <p>
+                    © 2020 DG. Todos os direitos reservados.
+                </p>
+                <p>
+                    <a href="">
+                        Developed by: Gabriel Eduardo Ruiz
+                    </a>
+                </p>
+            </div>
 
-            <button id="footer-bottom-backtop">
-                Voltar ao topo
-                <img src="../images/icons/arrow.svg" alt="">
-            </button>
+            <div id="footer-bottom-backtop">
+                <button >
+                    Voltar ao topo
+                    <img src="../images/icons/arrow.svg" alt="">
+                </button>
+            </div>
         </div>
     </footer>
+    <!-- Footer - Responsive menu -->
+    <!-- Responsive menu -->
+    <nav id="footer-responsiveMenu">
+        <a href="">
+            Press Center
+        </a>
+
+        <a href="">
+            Lideres
+        </a>
+
+        <a href="">
+            Membros em destaque
+        </a>
+
+        <a href="">
+            Termos de serviço
+        </a>
+
+        <a href="">
+            Suporte ao jogador
+        </a>
+    </nav>
 
 
 
@@ -503,6 +540,8 @@
     <!-- Scripts -->
     <!-- Components -->
         <!-- Footer -->
+            <!-- Responsive menu -->
+            <script src="../js/component/footer/responsiveMenu.js"></script>
             <!-- Modal languages -->
             <script src="../js/component/footer/modalLanguages.js"></script>
             <!-- Back to the top -->
