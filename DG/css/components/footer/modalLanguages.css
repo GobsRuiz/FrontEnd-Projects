@@ -5,12 +5,14 @@
     display: none;
     justify-content: center;
     align-items: center;
-
+    
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999999;
+    transition: opacity 0.5s;
 }
 
 
@@ -21,12 +23,17 @@
 
     text-align: center;
 
+    background-image: url("../../../images/logo.png");
+    background-size: 10vh;
+    background-position: 2% 2%;
     background-color: var(--third);
     border: 0.5vh solid var(--primary);
     border-radius: var(--borderRadius);
 
     padding: 5vh 0;
     position: relative;
+    top: -100vh;
+    transition: top 0.25s;
 }
 
 /* Close button */
@@ -40,8 +47,6 @@
     position: absolute;
     top: -7vh;
     right: -9vh;
-}#modal-languages-close:hover{
-    background-color: var(--primary);
 }
 
 
@@ -52,6 +57,8 @@
     align-items: center;
 
     margin-bottom: 3vh;
+    position: relative;
+    z-index: 9999;
 }
 
 /* Language options */

@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+section, div, span{
+    background-repeat: no-repeat;
+}
+
 li{
     list-style: none;
 }

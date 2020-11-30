@@ -1,23 +1,32 @@
 // Parent div
 var modalLanguages = document.getElementById("modal-languages");
+var modalLanguagesContent = document.getElementById("modal-languages-content");
 // Buttons
 var openButtonModalLanguages = document.getElementById("footer-bottom-languages");
 var closeButtonModalLanguages = document.getElementById("modal-languages-close");
 
 
-
+modalLanguages.style.display = "none";
 // Functions
 function openCloseModalLanguages() {
     // Open
     openButtonModalLanguages.addEventListener("click", () => {
-        modalLanguages.style.display = "flex";
+        if(modalLanguages.style.display === "none"){
+            modalLanguages.style.display = "flex";
+            setTimeout('modalLanguages.style.opacity = 1', 10)
+            setTimeout('modalLanguagesContent.style.top = 0', 50)
+        }
     })
 
     // Close
     closeButtonModalLanguages.addEventListener("click", () => {
-        modalLanguages.style.display = "none";
+        modalLanguagesContent.style.top = "-100vh";
+        setTimeout('modalLanguages.style.opacity = 0', 20)
+        setTimeout('modalLanguages.style.display = "none"', 300)
     })
     modalLanguages.addEventListener("click", () => {
-        modalLanguages.style.display = "none";
+        modalLanguagesContent.style.top = "-100vh";
+        setTimeout('modalLanguages.style.opacity = 0', 20)
+        setTimeout('modalLanguages.style.display = "none"', 300)
     })
 }openCloseModalLanguages()
