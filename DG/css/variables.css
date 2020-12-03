@@ -5,6 +5,10 @@
     /* Border radius */
     --borderRadius: 3vh;
 
+    /* Main */
+    --main-padding: 0 4.5vh;
+
+
     /* Components */
         /* Header */
             /* Header top */
@@ -23,11 +27,11 @@
             --headerResponsiveMenuNav_width: 40vh;
             --headerResponsiveMenuNav_width_negativeValue: -40vh;
 
-    /* Home */
-        /* Main */
-        /* body */
-        --main-padding: 0 4.5vh;
 
+    /* Home */
+
+
+    /* Games */
 
 
     /* Colors */

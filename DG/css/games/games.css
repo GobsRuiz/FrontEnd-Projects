@@ -1,0 +1,73 @@
+/* Banner */
+.games-banner{
+    height: 100vh;
+}
+.games-banner img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top;
+}
+
+
+
+/* Plot */
+.games-plot{
+    padding: var(--main-padding);
+}
+.games-plot h3{
+    font-size: 5vh;
+}
+.games-plot p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6vh;
+    font-weight: 700;
+}
+
+
+
+/* Slider */
+.games-slider{
+    width: 100%;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* Buttons */
+.games-slider-btn{
+    cursor: pointer;
+    font-size: 3vh;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.games-slider-prevBtn{
+    left: 2%;
+}
+.games-slider-nextBtn{
+    right: 2%;
+}
+
+
+
+/* Images */
+.games-slider-images{
+    display: flex;
+
+    transition: transform 0.25s;
+}
+.games-slider-image {
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.games-slider-image img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
