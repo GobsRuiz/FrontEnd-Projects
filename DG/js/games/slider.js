@@ -4,15 +4,26 @@ var gamesSliderImages = document.querySelector(".games-slider-images");
 var gamesSliderBtn = document.querySelectorAll(".games-slider-btn")
 // Images
 var gamesSliderImagesDivs = document.querySelectorAll(".games-slider-image");
+var gamesSliderImagesDivsIMG = document.querySelectorAll(".games-slider-image img");
 
-var numberOfImages = 3;
+var numberOfImages = 0;
+if(screen.width > 1024){
+    numberOfImages = 3;
+}else if(screen.width > 700){
+    numberOfImages = 2;
+}else{
+    numberOfImages = 1;
+    gamesSliderImagesDivsIMG.forEach(element => {
+        element.style.width = '100%';
+    });
+}
+
 var windowSize = window.innerWidth;
 var widthSize = windowSize / numberOfImages;
 var heightSize = windowSize / 5;
 var imagesElementCount = gamesSliderImages.childElementCount - numberOfImages;
 var index = 0;
 var translatex = 0;
-
 
 
 // Function
@@ -28,7 +39,7 @@ function sliderImagesSize() {
 function sliderBtns() {
     gamesSliderBtn.forEach(element => {
         element.addEventListener("click", event => {
-            if(event.target.classList[1] === "games-slider-nextBtn"){
+            if(event.target.classList[2] === "games-slider-nextBtn"){
                 if(index === imagesElementCount){
                     index = 0;
                     translatex = 0;
@@ -37,7 +48,7 @@ function sliderBtns() {
                     translatex -= widthSize;
                 }
                 sliderChangeImages();
-            }else if(event.target.classList[1] === "games-slider-prevBtn"){
+            }else if(event.target.classList[2] === "games-slider-prevBtn"){
                 if(index === 0){
                     index = imagesElementCount;
                     translatex -= imagesElementCount * widthSize;
@@ -54,3 +65,5 @@ function sliderBtns() {
 function sliderChangeImages() {
     gamesSliderImages.style.transform = `translateX(${translatex}px)`; 
 }
+
+
