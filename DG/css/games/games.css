@@ -191,6 +191,9 @@
     height: 20vh;
 
     margin: 10px 20px;
+    transition: transform 0.25s;
+}.games-links-logos div:hover{
+    transform: scale(1.1);
 }
 .games-links-logos img{
     height: 100%;
