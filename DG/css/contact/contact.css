@@ -1,0 +1,30 @@
+/* Select game */
+#selectGame{
+}
+
+/* Row */
+.selectGame-row{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+/* Card */
+.selectGame-card{
+    flex: 1 0 250;
+    max-width: 250px;
+    height: 250px;
+
+    cursor: pointer;
+
+    margin: 0 20px;
+    transition: transform 0.25s;
+}.selectGame-card:hover{
+    transform: translateY(-8px);
+}
+.selectGame-card img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
