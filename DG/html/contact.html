@@ -209,72 +209,153 @@
         </div>
 
         <section id="selectGame">
+            <!-- Title -->
             <div class="section-title">
                 <h3>
                     Selecione o jogo
                 </h3>
             </div>
 
+            <!-- Row -->
             <div class="selectGame-row">
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="fortnite">
                     <img src="../images/jogos/fortnite/fortnite.jpg" alt="">
                 </div>
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="gtav">
                     <img src="../images/jogos/gtav/gtav.jpeg" alt="">
                 </div>
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="pubg">
                     <img src="../images/jogos/pubg/pubg.jpg" alt="">
                 </div>
             </div>
             <div class="selectGame-row">
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="rdr2">
                     <img src="../images/jogos/rdr2/rdr2.jpg" alt="">
                 </div>
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="smite">
                     <img src="../images/jogos/smite/smite.jpg" alt="">
                 </div>
-                <div class="selectGame-card">
+                <div class="selectGame-card" id="valorant">
                     <img src="../images/jogos/valorant/valorant.jfif" alt="">
                 </div>
             </div>
+
+            <!-- Support -->
+            <section id="selectGame-cardSupport">
+                <i id="selectGame-cardSupport-btnClose" class="material-icons">
+                    close
+                </i>
+
+                <!-- Category -->
+                <section id="selectGame-cardSupport-category" class="selectGame-cardSupport-section">
+                    <h3 class="selectGame-cardSupport-sectionTitle">
+                        Selecione uma categoria
+                    </h3>
+
+                    <div class="selectGame-cardSupport-options">
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-account">
+                            <i class="material-icons">
+                                account_circle
+                            </i>
+                            Conta
+                        </div>
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-payments">
+                            <i class="material-icons">
+                                payments
+                            </i>
+                            Pagamento
+                        </div>
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-gamesProblems">
+                            <i class="material-icons">
+                                bug_report
+                            </i>
+                            Problemas no jogo
+                        </div>
+                    </div>
+                </section>
+
+                <section id="selectGame-cardSupport-account" class="selectGame-cardSupport-section">
+                    <h3 class="selectGame-cardSupport-sectionTitle">
+                        Conta
+                    </h3>
+
+                    <div class="selectGame-cardSupport-options">
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-account">
+                            <i class="material-icons">
+                                account_circle
+                            </i>
+                            Conta
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                payments
+                            </i>
+                            Pagamento
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                bug_report
+                            </i>
+                            Problemas no jogo
+                        </div>
+                    </div>
+                </section>
+                <section id="selectGame-cardSupport-payments" class="selectGame-cardSupport-section">
+                    <h3 class="selectGame-cardSupport-sectionTitle">
+                        Pagamento
+                    </h3>
+
+                    <div class="selectGame-cardSupport-options">
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-account">
+                            <i class="material-icons">
+                                account_circle
+                            </i>
+                            Conta
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                payments
+                            </i>
+                            Pagamento
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                bug_report
+                            </i>
+                            Problemas no jogo
+                        </div>
+                    </div>
+                </section>
+                <section id="selectGame-cardSupport-gamesProblems" class="selectGame-cardSupport-section">
+                    <h3 class="selectGame-cardSupport-sectionTitle">
+                        Problemas no jogo
+                    </h3>
+
+                    <div class="selectGame-cardSupport-options">
+                        <div class="selectGame-cardSupport-option" id="selectGame-options-account">
+                            <i class="material-icons">
+                                account_circle
+                            </i>
+                            Conta
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                payments
+                            </i>
+                            Pagamento
+                        </div>
+                        <div class="selectGame-cardSupport-option">
+                            <i class="material-icons">
+                                bug_report
+                            </i>
+                            Problemas no jogo
+                        </div>
+                    </div>
+                </section>
+            </section>
         </section>
     </main>
     <!-- Modal -->
-    <section id="modalContact">
-        <div id="modalContact-content">
-            <img id="modalContact-img" src="" alt="">
-
-            <section id="modalContact-category">
-                <div class="modalContact-title">
-                    <h3>
-                        Selectione uma categoria
-                    </h3>
-                </div>
-
-                <div id="modalContact-category-icons">
-                    <div>
-                        <i class="material-icons">
-                            account_circle
-                        </i>
-                        Conta
-                    </div>
-                    <div>
-                        <i class="material-icons">
-                            payments
-                        </i>
-
-                        pagamento
-                    </div>
-                    <div>
-                        <i class="material-icons">
-                            gamepad
-                        </i>
-                        Problemas no jogo
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
 
 
     <!-- Footer -->
@@ -442,6 +523,8 @@
             <script src="../js/component/header/responsiveMenu.js"></script>
     
     <!-- Main -->
+        <!-- Card support -->
+        <script src="../js/contact/cardSupport.js"></script>
         <!-- Modal -->
         <script src="../js/contact/modal.js"></script>
 </body> 

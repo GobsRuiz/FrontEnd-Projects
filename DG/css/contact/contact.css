@@ -9,6 +9,7 @@
 
     margin-bottom: 20px;
 }
+
 /* Card */
 .selectGame-card{
     flex: 1 0 250;
@@ -18,10 +19,18 @@
     cursor: pointer;
 
     margin: 0 20px;
-    transition: transform 0.25s;
-}.selectGame-card:hover{
-    transform: translateY(-8px);
+    position: relative;
+}.selectGame-card::after{
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+/* Image */
 .selectGame-card img{
     width: 100%;
     height: 100%;
@@ -31,68 +40,94 @@
 
 
 
-
-
-/* Modal */
-/* Modal contact */
-#modalContact{
-    width: 100%;
-    height: 100%;
-
+/* Card support */
+#selectGame-cardSupport{
     display: none;
+    grid-template: 
+       "section-category btnClose";
+    ;
+    grid-template-columns: 92% auto;
+
+    border: 1px solid blue;
+    opacity: 0;
+    overflow: hidden;
+
+    margin-top: 10px;
+    position: absolute;
+}
+
+/* Close button */
+#selectGame-cardSupport-btnClose{
+    grid-area: btnClose;
+    text-align: right;
+
+    font-size: 4vh;
+    cursor: pointer;
+
+    padding-right: 0.5vh;
+}
+
+/* Section category */
+#selectGame-cardSupport-category{
+    grid-area: section-category;
+    
+    background-color: #fff;
+
+    z-index: 9;
+}
+
+/* Section */
+.selectGame-cardSupport-section{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(0, 0, 0, 0.5);
-
-    position: fixed;
-    top: 0;
-    z-index: 9999999;
-}
-#modalContact-content{
-    width: 50%;
-    height: auto;
-
-    display: flex;
-
-    background-color: var(--third);
-
-    padding: 2vh;
-}
-
-/* Image */
-#modalContact-img{
-    width: 30%;
-    height: auto;
-}
-
-/* Sections */
-#modalContact-category{
-    width: 70%;
+    border: 1px solid red;
 }
 
 /* Title */
-.modalContact-title{
-    text-align: center;
-
-    margin-bottom: 20px;
-}
-.modalContact-title h3{
+.selectGame-cardSupport-sectionTitle{
     font-size: 3vh;
 }
 
-
-
-/* Category */
-#modalContact-category-icons{
+/* Options */
+.selectGame-cardSupport-options{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;    
+    align-items: center;
+
+    margin-top: 2vh;
 }
-#modalContact-category-icons div{
+/* Option */
+.selectGame-cardSupport-option{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin: 0 10px;
+    cursor: pointer;
+
+    margin: 0 3vh;
+    position: relative;
+}.selectGame-cardSupport-option::after{
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+/* Account, payment, gamesProblems */
+#selectGame-cardSupport-account,
+#selectGame-cardSupport-payments,
+#selectGame-cardSupport-gamesProblems{
+    display: none;
+
+    opacity: 0;
+}
+
+
+
+/* Modal */
