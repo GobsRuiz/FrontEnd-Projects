@@ -27,13 +27,13 @@
     background-size: 10vh;
     background-position: 2% 2%;
     background-color: var(--third);
-    border: 0.5vh solid var(--primary);
+    border: 0vh solid var(--primary);
     border-radius: var(--borderRadius);
 
     padding: 5vh 0;
     position: relative;
     top: -100vh;
-    transition: top 0.25s;
+    transition: top 0.25s, border 0.25s;
 }
 
 /* Close button */
@@ -48,6 +48,10 @@
     position: absolute;
     top: -7vh;
     right: -9vh;
+    transition: 0.25s;
+}#modal-languages-close:hover{
+    color: var(--secondary);
+    background-color: var(--primary);
 }
 
 
