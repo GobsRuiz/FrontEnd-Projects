@@ -9,6 +9,8 @@ var selectGameCardSupportBtnClose = document.getElementById("selectGame-cardSupp
 
 // Category
 var selectGameCardSupportCategory = document.getElementById("selectGame-cardSupport-category");
+var selectGameCardSupportCategoryGameImage = document.getElementById("selectGame-cardSupport-category-gameImage");
+
 // Category options
 var selectGameCardSupportCategoryOptions = document.querySelectorAll("#selectGame-cardSupport-category .selectGame-cardSupport-categoryOption");
 
@@ -37,6 +39,8 @@ function eventListener() {
             // Condition
             if(selectGameCardSupport.style.display == "grid"){
                 if(currentPosition <= 2 && position <= 2 || currentPosition > 2 && position > 2){
+                    var getElement = document.getElementById(event.target.id);
+                    selectGameCardSupportCategoryGameImage.src = getElement.children[0].src;
                     return;
                 }else{
                     var cardSupportOptions = document.querySelectorAll(".selectGame-cardSupport-options");
@@ -68,7 +72,7 @@ function eventListener() {
                     setTimeout(() => {
                         var rowSpacing_margin = "20px";
                         rowSpacing(rowSpacing_margin)
-                    }, 200);
+                    }, 280);
 
                     setTimeout(() => {
                         selectGameCardSupport.style.opacity = 0;
@@ -126,6 +130,9 @@ function openCardSupport(elementId) {
     // Line spacing - selectGame-row
     var rowSpacing_margin = selectGameCardSupport_height + 40 + "px";
     rowSpacing(rowSpacing_margin)
+
+    // Game image
+    selectGameCardSupportCategoryGameImage.src = getElement.children[0].src;
 }
 
 // Close card support
@@ -158,16 +165,16 @@ function closeCardSupport() {
             });
         }, 250);
         
-        setTimeout(() => {
-            selectGameCardSupport.style.opacity = 0;
-            selectGameCardSupport.style.display = "none";
-        }, 650);
-
         // Line spacing - selectGame - row
         setTimeout(() => {
             var rowSpacing_margin = "20px";
             rowSpacing(rowSpacing_margin)
-        }, 200)
+        }, 280)
+
+        setTimeout(() => {
+            selectGameCardSupport.style.opacity = 0;
+            selectGameCardSupport.style.display = "none";
+        }, 650);
     })
 }closeCardSupport()
 
@@ -231,5 +238,5 @@ function selectedCategoryOption() {
 
 // Selected option
 function selectedOption() {
-    openModalContactForm()
+    openModalContactForm(selectGameCardSupportCategoryGameImage.src)
 }

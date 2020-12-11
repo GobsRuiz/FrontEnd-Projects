@@ -39,6 +39,7 @@
 /* Close button */
 #modal-languages-close{
     color: var(--third);
+    font-weight: bold;
     background-color: var(--secondary);
     border-radius: 50%;
     cursor: pointer;

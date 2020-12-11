@@ -57,6 +57,8 @@
     position: absolute;
 }
 
+
+
 /* Close button */
 #selectGame-cardSupport-btnClose{
     grid-area: btnClose;
@@ -74,6 +76,8 @@
     color: #fff;
 }
 
+
+
 /* Section category */
 #selectGame-cardSupport-category{
     grid-area: section-category;
@@ -82,13 +86,25 @@
 
     z-index: 9;
 }
-
 /* Section */
 .selectGame-cardSupport-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Game image */
+#selectGame-cardSupport-category-gameImage{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    
+    position: absolute;
+    left: 1vh;
+    top: 1vh;
 }
 
 /* Title */
@@ -173,12 +189,13 @@
     width: 50%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     background-color: var(--third);
+    border-radius: var(--borderRadius);
 
-    padding: 6vh 2vh;
     position: relative;
     top: -100vh;
     transition: top 0.25s;
@@ -188,14 +205,34 @@
 
 /* Close button */
 #modal-contactForm-closeBtn{
-    cursor: pointer;
+    color: var(--third);
     font-weight: bold;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    cursor: pointer;
 
+    padding: 2vh;
     position: absolute;
-    top: 1vh;
-    right: 1vh;
+    top: -7vh;
+    right: -9vh;
+    transition: color 0.25s, background-color 0.25s;
 }#modal-contactForm-closeBtn:hover{
-    color: var(--primary);
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+
+
+/* Game image */
+#modal-ContactForm-gameImage{
+    width: 100%;
+    height: 80px;
+
+    border-radius: var(--borderRadius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+    object-position: top;
 }
 
 
@@ -206,6 +243,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 5vh 2vh;
 }
 
 /* Input label */

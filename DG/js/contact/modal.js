@@ -4,11 +4,12 @@ var modalContactForm = document.getElementById("modal-contactForm");
 var modalContactFormContent = document.getElementById("modal-contactForm-content");
 // Close button
 var modalContactFormCloseBtn = document.getElementById("modal-contactForm-closeBtn");
-
+// Game image
+var modalContactFormGameImage = document.getElementById("modal-ContactForm-gameImage");
 
 
 // Functions
-function openModalContactForm(){
+function openModalContactForm(src){
     modalContactForm.style.display = "flex";
     setTimeout(() => {
         modalContactForm.style.opacity = 1;
@@ -16,6 +17,8 @@ function openModalContactForm(){
     setTimeout(() => {
         modalContactFormContent.style.top = 0;
     }, 50)
+
+    modalContactFormGameImage.src = src;
 }
 
 function closeModalContactForm() {
