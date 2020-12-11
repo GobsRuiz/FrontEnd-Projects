@@ -40,17 +40,18 @@
 
 
 
+
+
 /* Card support */
 #selectGame-cardSupport{
     display: none;
     grid-template: 
        "section-category btnClose";
     ;
-    grid-template-columns: 92% auto;
+    grid-template-columns: 96% auto;
 
-    border: 1px solid blue;
+    background-color: var(--primary);
     opacity: 0;
-    overflow: hidden;
 
     margin-top: 10px;
     position: absolute;
@@ -59,19 +60,25 @@
 /* Close button */
 #selectGame-cardSupport-btnClose{
     grid-area: btnClose;
-    text-align: right;
 
+    text-align: center;
+
+    color: var(--secondary);
+    font-weight: bold;
+}
+#selectGame-cardSupport-btnClose i{
     font-size: 4vh;
     cursor: pointer;
-
-    padding-right: 0.5vh;
+}
+#selectGame-cardSupport-btnClose i:hover{
+    color: #fff;
 }
 
 /* Section category */
 #selectGame-cardSupport-category{
     grid-area: section-category;
-    
-    background-color: #fff;
+
+    background-color: var(--primary);
 
     z-index: 9;
 }
@@ -82,8 +89,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid red;
 }
 
 /* Title */
@@ -91,24 +96,25 @@
     font-size: 3vh;
 }
 
-/* Options */
-.selectGame-cardSupport-options{
+/* Category options */
+.selectGame-cardSupport-categoryOptions{
     display: flex;
     align-items: center;
 
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
-/* Option */
-.selectGame-cardSupport-option{
+/* Category option */
+.selectGame-cardSupport-categoryOption{
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    color: var(--secondary);
     cursor: pointer;
 
     margin: 0 3vh;
     position: relative;
-}.selectGame-cardSupport-option::after{
+}.selectGame-cardSupport-categoryOption::after{
     content: '';
 
     width: 100%;
@@ -117,17 +123,175 @@
     position: absolute;
     top: 0;
     left: 0;
+}.selectGame-cardSupport-categoryOption:hover{
+    color: #fff;
 }
 
-/* Account, payment, gamesProblems */
-#selectGame-cardSupport-account,
-#selectGame-cardSupport-payments,
-#selectGame-cardSupport-gamesProblems{
+
+
+/* Option */
+.selectGame-cardSupport-options{
     display: none;
 
-    opacity: 0;
+    background-color: var(--secondary);
+
+    padding: 1vh 10vh;
+    position: absolute;
 }
+.selectGame-cardSupport-options p{
+    color: var(--third);
+    cursor: pointer;
+}
+.selectGame-cardSupport-options p:hover{
+    color: var(--primary);
+}
+
+
 
 
 
 /* Modal */
+#modal-contactForm{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+/* Content */
+#modal-contactForm-content{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--third);
+
+    padding: 6vh 2vh;
+    position: absolute;
+}
+
+
+
+/* Close button */
+#modal-contactForm-closeBtn{
+    cursor: pointer;
+    font-weight: bold;
+
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+}#modal-contactForm-closeBtn:hover{
+    color: var(--primary);
+}
+
+
+
+/* Form */
+#modal-contactForm-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input label */
+.form-inputLabel{
+    margin-bottom: 5vh;
+    position: relative;
+}
+/* Input label - textarea */
+#form-inputLavel-textarea{
+    margin-top: 0.6vh;
+}
+/* Text area */
+.form-inputLabel textarea{
+    height: 50px;
+
+    transition: height 0.25s;
+}
+/* Input and text area */
+.form-inputLabel input,
+.form-inputLabel textarea{
+    width: 300px;
+    
+    border: 0;
+    border-bottom: 0.4vh solid var(--secondary);
+    outline: 0;
+    box-sizing: border-box;
+    padding: 0 1vh;
+}
+
+/* Span */
+.form-inputLabel span{
+    width: 100%;
+    height: 0.4vh;
+
+    display: block;
+
+    background-color: var(--fourth);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+.form-inputLabel textarea ~ span{
+    bottom: 2.2vh;
+}
+
+/* Label */
+.form-inputLabel label{
+    position: absolute;
+    left: 0;
+    top: 1.6vh;
+    transition: top 0.25s;
+}
+.form-inputLabel textarea ~ label{
+    top: 3vh;
+}
+
+/* Input focus and valid */
+.form-inputLabel input:focus ~ span,
+.form-inputLabel textarea:focus ~ span,
+.form-inputLabel input:valid ~ span,
+.form-inputLabel textarea:valid ~ span{
+    transform: scaleY(1);
+}
+.form-inputLabel input:focus ~ label,
+.form-inputLabel input:valid ~ label{
+    top: -4vh;
+}
+/* Textarea focus and valid */
+.form-inputLabel textarea:focus,
+.form-inputLabel textarea:valid{
+    height: 150px;
+}
+.form-inputLabel textarea:focus ~ label,
+.form-inputLabel textarea:valid ~ label{
+    top: -4.5vh;
+}
+
+/* Button */
+#modal-contactForm-content form button{
+    color: var(--third);
+    background-color: var(--fifith);
+    border-radius: 5vh;
+    cursor: pointer;
+
+    padding: 1vh 8vh;
+    transition: background-color 0.25s;
+}
+#modal-contactForm-content form button:hover{
+    background-color: var(--fifith-darker);
+}

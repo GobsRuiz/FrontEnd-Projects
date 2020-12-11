@@ -38,7 +38,9 @@
     --primary: #EC1C24;
     --secondary: rgb(26, 26, 26);
     --third: #fff;
-    --fourth: ;
+    --fourth: #3498db;
+    --fifith: #2ecc71;
+    --fifith-darker: #1f9651;
     --primary-gradient: linear-gradient(to right, #e52d27, #b31217);
 
     /* Text colors */
