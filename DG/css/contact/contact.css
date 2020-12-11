@@ -155,16 +155,18 @@
     width: 100%;
     height: 100%;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999999999;
+    transition: opacity 0.25s;
 }
 /* Content */
 #modal-contactForm-content{
@@ -177,7 +179,9 @@
     background-color: var(--third);
 
     padding: 6vh 2vh;
-    position: absolute;
+    position: relative;
+    top: -100vh;
+    transition: top 0.25s;
 }
 
 
