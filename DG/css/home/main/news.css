@@ -28,7 +28,7 @@
     flex: 1;
     max-width: 85vh;
 
-    border: 1vh solid var(--fourth);
+    border: 1vh solid var(--secondary);
     border-radius: var(--borderRadius);
 
     margin: 0 4vh;
