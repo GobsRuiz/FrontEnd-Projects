@@ -1,0 +1,61 @@
+#games{
+}
+
+/* Row */
+.games-row{
+    display: flex;
+
+    margin-bottom: 10vh;
+}.games-row:last-child{
+    margin-bottom: 4vh;
+}
+
+/* Card */
+.games-card{
+    flex: 1;
+    height: 70vh;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    margin: 0 4vh;
+}
+.games-card img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.2s;
+}.games-card:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Responsive */
+@media(max-width: 1024px){
+    #games{
+        display: flex;
+    }
+    .games-row{
+        flex-direction: column;
+    }
+    .games-row,
+    .games-row:last-child{
+        margin-bottom: 0vh;
+    }
+    .games-card{
+        flex: 1 0 300px;
+
+        margin-bottom: 4vh;
+    }
+}
+
+@media(max-width: 500px){
+    #games{
+        display: block;
+    }
+}

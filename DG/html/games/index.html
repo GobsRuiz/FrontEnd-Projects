@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DG</title>
 
     <!-- CSS -->
     <!-- Google fonts -->
@@ -23,20 +23,22 @@
     <link rel="stylesheet" href="../../css/html.css">
 
     <!-- Components -->
+        <!-- Header -->
+        <link rel="stylesheet" href="../../css/components/header/header.css">
+        <link rel="stylesheet" href="../../css/components/header/header2.css">
         <!-- Footer -->
         <link rel="stylesheet" href="../../css/components/footer/footer.css">
             <!-- Modal languages -->
             <link rel="stylesheet" href="../../css/components/footer/modalLanguages.css">
 
-    <!-- Home -->
-        <!-- Header -->
-        <link rel="stylesheet" href="../../css/components/header/header.css">
-        <link rel="stylesheet" href="../../css/components/header/header2.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="../../css/games/index.css">
+        <!-- Class -->
+            <link rel="stylesheet" href="../../css/class.css">
 
-        <!-- Main -->
-        <link rel="stylesheet" href="../../css/games/games.css">
 </head>
 <body>
+
     <!-- Header -->
     <header id="header">
         <!-- Top -->
@@ -52,7 +54,7 @@
                 <nav id="header-top-menu">
                     <ul>
                         <li class="sub-menu">
-                            <a href="games.html">
+                            <a href="games/index.html">
                                 Jogos
                             </a>
 
@@ -100,6 +102,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="../contact.html">
+                                Contato
+                            </a>
+                        </li>
+                        <li>
                             <a href="../about.html">
                                 Sobre
                             </a>
@@ -123,6 +130,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Background images -->
+        <div id="header-backgroundImages"></div>
     </header>
 
     <!-- Responsive menu -->
@@ -180,6 +190,10 @@
                     Suporte
                 </a>
             </li>
+            <li>
+                <a href="../contact.html">
+                    Contato
+                </a>
             </li>
             <li>
                 <a href="../about.html">
@@ -188,138 +202,59 @@
             </li>
         </ul>
     </nav>
-
+    
     <!-- Main -->
-    <main>
-        <section id="gtav">
-            <!-- Banner -->
-            <div class="games-banner">
-                <img src="../../images/jogos/pubg/pubg.jpg" alt="">
-            </div>
+    <main id="main">
+        <!-- Section title -->
+        <div class="page-title">
+            <h1>
+                Jogos
+            </h1>
+        </div>
 
-            <!-- Content -->
-            <div class="games-content">
-                <!-- Plot -->
-                <div class="games-plot">
-                    <div class="games-sectionTitle">
-                        <h3>
-                            Enredo
-                        </h3>
-                    </div>
-                    <div class="games-plot-text">
-                        <div>
-                            <p>
-                                <a href="https://www.pubg.com/en-us/" target="_blank">
-                                    PlayerUnknown's Battlegrounds (PUBG) 
-                                </a>
-                                é um jogo eletrônico multiplayer desenvolvido pela 
-                                <a href="https://www.pubg.com/en-us/" target="_blank">
-                                    PUBG Corp., 
-                                </a>
-                                subsidiária da produtora 
-                                <a href="https://pt.wikipedia.org/wiki/Bluehole_Studio" target="_blank">
-                                    coreana Bluehole
-                                </a>
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <p>
-                                O jogo consiste de até cem jogadores que caem de paraquedas em uma ilha em busca de armas e equipamento a fim de matar os outros jogadores, enquanto tentam sobreviver ao mesmo tempo. A área de jogo diminui progressivamente, confinando os sobreviventes a um espaço cada vez menor e forçando encontros. Ganha o último jogador ou time sobrevivente. O jogo permite tanto as perspectivas de primeira pessoa como em terceira pessoa.
-                            </p>
-                        </div>
-
-                        <div>
-                            <a href="https://pt.wikipedia.org/wiki/PlayerUnknown%E2%80%99s_Battlegrounds" target="_blank">
-                                https://pt.wikipedia.org/wiki/PlayerUnknown%E2%80%99s_Battlegrounds
-                            </a>
-                        </div>
-                    </div>
+        <!-- Games -->
+        <section id="games">
+            <!-- Row -->
+            <div class="games-row">
+                <!-- Cards -->
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/gtav.html">
+                        <img src="../../images/jogos/gtav/gtav.jpeg" alt="">
+                    </a>
                 </div>
 
-                <!-- Trailer -->
-                <div class="games-trailer">
-                    <div class="games-sectionTitle games-slider-sectionTitle">
-                        <h3>
-                            Trailer
-                        </h3>
-                    </div>
-
-                    <div class="games-trailer-iframe">
-                        <div class="games-trailer-iframe-img">
-                            <img src="../../images/jogos/pubg/trailer/1.png" alt="">
-                        </div>
-                        <iframe src="https://www.youtube.com/embed/6FAldb21s2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="games-trailer-iframe-img">
-                            <img src="../../images/jogos/pubg/trailer/2.png" alt="">
-                        </div>
-                    </div>
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/fortnite.html">
+                        <img src="../../images/jogos/fortnite/fortnite.jpg" alt="">
+                    </a>
                 </div>
 
-                <!-- Images | Slider -->
-                <div class="games-slider">
-                    <div class="games-sectionTitle games-slider-sectionTitle">
-                        <h3>
-                            Imagens
-                        </h3>
-                    </div>
-
-                    
-                    <!-- Images -->
-                    <div class="games-slider-btnsImages">
-                        <!-- Button -->
-                        <i class="material-icons games-slider-btn games-slider-prevBtn">
-                            keyboard_arrow_left
-                        </i>
-                        <i class="material-icons games-slider-btn games-slider-nextBtn">
-                            keyboard_arrow_right
-                        </i>
-
-                        <div class="games-slider-images">
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/1.png" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/2.jpg" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/3.jpg" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/4.png" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/5.jpg" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/6.webp" alt="">
-                            </div>
-                            <div class="games-slider-image">
-                                <img src="../../images/jogos/pubg/slider/7.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/pubg.html">
+                        <img src="../../images/jogos/pubg/pubg.jpg" alt="">
+                    </a>
                 </div>
             </div>
-            <!-- Company -->
-            <div class="games-links">
-                <div class="games-sectionTitle">
-                    <h3>
-                        Links
-                    </h3>
+
+            <!-- Row -->
+            <div class="games-row">
+                <!-- Cards -->
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/rdr2.html">
+                        <img src="../../images/jogos/rdr2/rdr2.jpg" alt="">
+                    </a>
                 </div>
 
-                <div class="games-links-logos">
-                    <div>
-                        <a href="https://www.pubg.com/pt-br/" target="_blank">
-                            <img src="../../images/jogos/pubg/links/pubg.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">
-                            <img src="../../images/jogos/links/wikipedia.png" alt="" class="games-links-logos-wikiepdia">
-                        </a>
-                    </div>
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/smite.html">
+                        <img src="../../images/jogos/smite/smite.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="games-card">
+                    <a href="file:///D:/Programming/Git-repositories/FrontEnd-Projects/DG/html/games/valorant.html">
+                        <img src="../../images/jogos/valorant/valorant.jfif" alt="">
+                    </a>
                 </div>
             </div>
         </section>
@@ -425,7 +360,6 @@
 
 
 
-
     <!-- Modals -->
     <!-- Languages -->
     <section id="modal-languages">
@@ -470,7 +404,7 @@
         </div>
     </section>
 
-
+    
 
     <!-- Scripts -->
     <!-- Components -->
@@ -487,9 +421,5 @@
             <script src="../../js/component/footer/modalLanguages.js"></script>
             <!-- Back to the top -->
             <script src="../../js/component/footer/backToTheTop.js"></script>
-        
-        <!-- Main -->
-            <!-- Slider -->
-            <script src="../../js/games/slider.js"></script>
-</body>
+</body> 
 </html>
