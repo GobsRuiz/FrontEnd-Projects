@@ -1,0 +1,110 @@
+/* News title || Page title */
+.news-title{
+    height: 85vh;
+
+    background-image: url("../../images/news/TheCayoPericoHeist-GTAV/img.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+
+
+
+
+/* News sections */
+.news-section{
+    border-bottom: 8px solid;
+    border-image-source: linear-gradient(45deg, #F8D26E, #eb9732);
+    border-image-slice: 1;
+}.news-section:last-child{
+    border-bottom: 0;
+}
+
+
+
+/* Title */
+.news-sections-title{
+    text-align: center;
+
+    background: -webkit-linear-gradient(left,#F8D26E, #eb9732);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6vh;
+
+    padding: 5vh 0;
+}
+
+
+
+/* Image */
+.news-sections-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+/* Text */
+.news-sections-text{
+    width: 70%;
+
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+.news-sections-text p{
+    padding: 0 15vh;
+}
+.news-sections-text p,
+.news-sections-text p span{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vh;
+    font-style: italic;
+}
+.news-sections-text p span{
+    font-weight: 900;
+}
+
+/* Divisor */
+.news-section-division{
+    height: 15vh;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    position: relative;
+}
+.news-section-division span{
+    width: 6vh;
+    height: 5vh;
+
+    display: block;
+
+    background: -webkit-linear-gradient(left,#F8D26E, #eb9732);
+
+    clip-path: polygon(50% 20%, 100% 50%, 50% 80%, 0% 50%);
+    
+    position: absolute;
+}
+.news-section-division span:nth-child(1){
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.news-section-division span:nth-child(2){
+    top: 50%;
+    left: 47.5%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.news-section-division span:nth-child(3){
+    top: 50%;
+    left: 52.5%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.news-section-division span:nth-child(4){
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
