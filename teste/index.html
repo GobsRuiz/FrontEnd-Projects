@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        min-height: 50vh;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    #div1{
+        background-color: red;
+    }
+    #div1 h1{
+        font-size: min(150px, 10vw);
+    }
+
+    #div2{
+        background-color: rgb(0, 174, 255);
+    }
+    #div2 h1{
+        font-size: max(40px, 5vw);
+    }
+
+    #div3{
+        background-color: orange;
+    }
+    #div3 h1{
+        font-size: calc(2vw + 3vh);
+
+        margin-bottom: 2vh;
+    }
+    #div3 p{
+        font-size: calc(2vw + 2vh);
+    }
+
+    #div4{
+        background-color: purple;
+    }
+    #div4 h1{
+        font-size: clamp(1em, 2vw + 2vh, 3em);
+
+        margin-bottom: 2vh;
+    }
+    #div4 p{
+    }
+
+</style>
+<body>
+
+    <section id="div1">
+        <h1>
+            Teste mínimo
+        </h1>
+    </section>
+
+    <section id="div2">
+        <h1>
+            Teste máximo
+        </h1>
+    </section>
+
+    <section id="div3">
+        <h1>
+            Teste cálculo
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, similique porro! Nisi ipsa eligendi porro consequatur natus assumenda voluptatem, quod cumque quas similique temporibus illum qui accusantium. Rem, odio beatae.
+        </p>
+    </section>
+
+    <section id="div4">
+        <h1>
+            Teste Clamp
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, similique porro! Nisi ipsa eligendi porro consequatur natus assumenda voluptatem, quod cumque quas similique temporibus illum qui accusantium. Rem, odio beatae.
+        </p>
+    </section>
+    
+</body>
+</html>
