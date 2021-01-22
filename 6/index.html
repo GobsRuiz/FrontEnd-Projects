@@ -6,13 +6,38 @@
     <title>Document</title>
 
     <!-- CSS -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div id="slider">
-        <input type="range" min="1" max="100" value="1" id="slider_input">
+    <div id="title">
+        <h1>
+            <span id="title-1">
+                R
+            </span>
+            <span id="title-2">
+                G
+            </span>
+            <span id="title-3">
+                B
+            </span>
+            <span id="title-4">
+                A
+            </span>
+        </h1>            
+    </div>
 
+    <!-- Slider -->
+    <div id="slider">
+        <!-- Input -->
+        <input type="range" min="1" max="50" value="1" id="slider_input">
+
+        <!-- Text || value -->
         <p id="slider_value"></p>
     </div>
 
