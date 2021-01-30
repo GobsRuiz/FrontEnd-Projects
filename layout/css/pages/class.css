@@ -6,6 +6,7 @@
     background-size: fill;
     background-repeat: no-repeat;
 
+    padding-top: calc(5vh + 2vw);
     position: relative;
 }
 .section-yellow{
@@ -14,6 +15,8 @@
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
+
+    padding-top: calc(5vh + 2vw);
 }
 
 
@@ -72,6 +75,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+/* Button */
+.button{
+    color: var(--yellow);
+    text-transform: capitalize;
+    font-size: calc(1.2vh + .5vw);
+    font-weight: bold;
+    background-color: var(--black);
+    border: calc(.4vh + .1vw) solid var(--black);
+
+    padding: calc(.7vh + .2vw) calc(3.5vh + 1.3vw);
+    transition: background-color .25s, color .25s;
+}.button:hover{
+    color: var(--black);
+    background-color: transparent;
 }
 
 

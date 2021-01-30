@@ -1,7 +1,7 @@
 #section3{
     text-align: center;
 
-    padding-top: calc(5vh + 2vw);
+    
     padding-bottom: calc(10vh + 3.5vw);
 }
 
@@ -42,6 +42,7 @@ is found in the class.css file */
 /* P */
 #section3-content-left p{
     color: var(--yellow);
+    font-size: calc(1.5vh + .5vw);
 
     margin-bottom: calc(2.5vh + 1vw);
 }

@@ -1,0 +1,62 @@
+#section4{
+    padding-left: calc(15vh + 4.5vw);
+    padding-right: calc(15vh + 4.5vw);
+    padding-bottom: calc(10vh + 3.5vw);
+}
+
+
+
+
+
+/* Content */
+/* Div */
+.section4-content-div{
+    width: 40%;
+
+    text-align: left;
+
+    /* margin-bottom: var(--h3_margin-bottom); */
+    position: relative;
+}
+
+/* H3 */
+.section4-content-div h3{
+    color: var(--black);
+    font-size: var(--h1_font-size);
+
+    margin-bottom: var(--h3_margin-bottom);
+}
+/* P */
+.section4-content-div p{
+    color: var(--black);
+    font-size: calc(1.5vh + .5vw);
+
+    margin-bottom: calc(2.5vh + 1vw);
+}
+
+
+/* HR */
+.section4-content-div hr{
+    background-color: var(--black);
+}.section4-content-div .hr-left{
+    left: 0;
+}.section4-content-div .hr-right{
+    right: 48%;
+}
+
+.section4-content-div:nth-child(3) hr{
+    top: -12%;
+}
+
+
+
+
+
+/* Image */
+/* Binocular */
+#section4-content-binocular{
+    text-align: right;
+}
+#section4-content-binocular img{
+    width: calc(35vh + 10vw);
+}

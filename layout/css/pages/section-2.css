@@ -1,7 +1,6 @@
 #section2{
     text-align: center;
 
-    padding-top: calc(5vh + 2vw);
     padding-bottom: calc(10vh + 3.5vw);
 }
 
@@ -56,19 +55,5 @@ is found in the class.css file */
 
     margin-bottom: calc(2vh + .5vw);
 }
-/* Button */
-#section2-content-right button{
-    color: var(--yellow);
-    text-transform: capitalize;
-    font-size: calc(1.2vh + .5vw);
-    font-weight: bold;
-    background-color: var(--black);
-    border: calc(.4vh + .1vw) solid var(--black);
 
-    padding: calc(.7vh + .2vw) calc(3.5vh + 1.3vw);
-    transition: background-color .25s, color .25s;
-}#section2-content-right button:hover{
-    color: var(--black);
-    background-color: transparent;
-}
 
