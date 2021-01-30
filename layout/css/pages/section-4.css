@@ -1,7 +1,6 @@
 #section4{
     padding-left: calc(15vh + 4.5vw);
     padding-right: calc(15vh + 4.5vw);
-    padding-bottom: calc(10vh + 3.5vw);
 }
 
 
@@ -20,20 +19,14 @@
 }
 
 /* H3 */
+/* The style of this section / div 
+is found in the class.css file */
 .section4-content-div h3{
-    color: var(--black);
     font-size: var(--h1_font-size);
-
-    margin-bottom: var(--h3_margin-bottom);
 }
 /* P */
-.section4-content-div p{
-    color: var(--black);
-    font-size: calc(1.5vh + .5vw);
-
-    margin-bottom: calc(2.5vh + 1vw);
-}
-
+/* The style of this section / div 
+is found in the class.css file */
 
 /* HR */
 .section4-content-div hr{

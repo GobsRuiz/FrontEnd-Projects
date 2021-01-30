@@ -1,22 +1,24 @@
 /* Section */
-.section-black{
-    background-color: var(--black);
-    background-image: url("../../images/background/yellow/1.svg");
+.section-black, 
+.section-yellow{
+    text-align: center;
+
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
 
     padding-top: calc(5vh + 2vw);
+    padding-bottom: calc(10vh + 3.5vw);
     position: relative;
+}
+
+.section-black{
+    background-color: var(--black);
+    background-image: url("../../images/background/yellow/1.svg");
 }
 .section-yellow{
     background-color: var(--yellow);
     background-image: url("../../images/background/black/1.svg");
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-
-    padding-top: calc(5vh + 2vw);
 }
 
 
@@ -79,6 +81,19 @@
 
 
 
+
+
+/* H3 */
+.section-h3{
+    font-size: var(--h3_font-size);
+
+    margin-bottom: var(--h3_margin-bottom);
+}
+.section-p{
+    font-size: calc(1.5vh + .5vw);
+
+    margin-bottom: calc(2vh + .5vw);
+}
 
 
 /* Button */

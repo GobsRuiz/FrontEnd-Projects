@@ -1,14 +1,3 @@
-#section3{
-    text-align: center;
-
-    
-    padding-bottom: calc(10vh + 3.5vw);
-}
-
-
-
-
-
 /* Section title */
 /* h1 */
 .section-title h1{
@@ -33,18 +22,17 @@ is found in the class.css file */
     position: relative;
 }
 /* H3 */
+/* The style of this section / div 
+is found in the class.css file */
 #section3-content-left h3{
     color: var(--yellow);
     font-size: var(--h1_font-size);
-
-    margin-bottom: var(--h3_margin-bottom);
 }
 /* P */
+/* The style of this section / div 
+is found in the class.css file */
 #section3-content-left p{
     color: var(--yellow);
-    font-size: calc(1.5vh + .5vw);
-
-    margin-bottom: calc(2.5vh + 1vw);
 }
 
 /* H3 */

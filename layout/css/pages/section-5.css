@@ -1,0 +1,24 @@
+/* Content */
+/* Div */
+.section5-content-div{
+    width: 25%;
+
+    display: inline-block;
+
+    position: relative;
+}
+
+/* H3 and p*/
+.section5-content-div h3,
+.section5-content-div p{
+    color: var(--yellow);
+}
+
+/* HR */
+.section5-content-div:nth-child(1) .hr-left{
+    left: 0;
+}
+.section5-content-div:nth-child(1) .hr-right{
+    width: 50%;
+    right: 38%;
+}
