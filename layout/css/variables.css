@@ -1,0 +1,22 @@
+:root{
+    /* Colors */
+    /* Black */
+    --black: rgb(19, 19, 19);
+
+    /* Yellow */
+    --yellow: #ffd000;
+
+
+
+    /* HTML */
+    /* Header */
+
+    /* Main */
+    /* H1 */
+    --h1_font-size: calc(2.5vh + .8vw);
+
+    /* H3 */
+    --h3_font-size: calc(2.2vh + .5vw);
+    --h3_margin-bottom: calc(1vh + .3vw);
+}
+

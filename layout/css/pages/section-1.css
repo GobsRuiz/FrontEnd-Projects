@@ -1,0 +1,33 @@
+#section1{
+    padding-top: calc(20vh + 7vw);
+    padding-bottom: calc(10vh + 3.5vw);
+}
+
+
+
+/* Content */
+#section1-content{
+    width: 40%;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Title */
+#section1 h1{
+    color: var(--yellow);
+    font-size: var(--h1_font-size);
+
+    margin-bottom: calc(4vh + 1vw);
+}
+
+
+/* section1_moon */
+#section1_moon{
+    width: calc(10vh + 5vw);
+
+    position: absolute;
+    top: 2%;
+    left: 15%;
+}

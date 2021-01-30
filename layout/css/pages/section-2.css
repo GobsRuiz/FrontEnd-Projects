@@ -1,0 +1,74 @@
+#section2{
+    text-align: center;
+
+    padding-top: calc(5vh + 2vw);
+    padding-bottom: calc(10vh + 3.5vw);
+}
+
+
+
+
+
+#section2 .section-title h1{
+    color: var(--black);
+}
+
+
+
+
+
+/* HR */
+#section2 .hr{
+    background-color: var(--black);
+}
+
+
+
+
+
+/* Content */
+/* The style of this section / div 
+is found in the class.css file */
+
+/* Image */
+/* Rocket */
+#section2-content img{
+    width: calc(25vh + 8vw);
+
+    margin-right: calc(10vh + 3vw);
+}
+
+/* Right */
+#section2-content-right{
+    width: 25%;
+
+    text-align: right;
+}
+/* H3 */
+#section2-content-right h3{
+    font-size: var(--h3_font-size);
+
+    margin-bottom: var(--h3_margin-bottom);
+}
+/* P */
+#section2-content-right p{
+    font-size: calc(1.5vh + .5vw);
+
+    margin-bottom: calc(2vh + .5vw);
+}
+/* Button */
+#section2-content-right button{
+    color: var(--yellow);
+    text-transform: capitalize;
+    font-size: calc(1.2vh + .5vw);
+    font-weight: bold;
+    background-color: var(--black);
+    border: calc(.4vh + .1vw) solid var(--black);
+
+    padding: calc(.7vh + .2vw) calc(3.5vh + 1.3vw);
+    transition: background-color .25s, color .25s;
+}#section2-content-right button:hover{
+    color: var(--black);
+    background-color: transparent;
+}
+

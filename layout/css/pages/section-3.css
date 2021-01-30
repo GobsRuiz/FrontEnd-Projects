@@ -1,0 +1,61 @@
+#section3{
+    text-align: center;
+
+    padding-top: calc(5vh + 2vw);
+    padding-bottom: calc(10vh + 3.5vw);
+}
+
+
+
+
+
+/* Section title */
+/* h1 */
+.section-title h1{
+    color: var(--yellow);
+}
+
+
+
+
+
+/* Content */
+/* The style of this section / div 
+is found in the class.css file */
+
+/* Left */
+#section3-content-left{
+    width: 30%;
+
+    text-align: left;
+
+    margin-right: calc(10vh + 3vw);
+    position: relative;
+}
+/* H3 */
+#section3-content-left h3{
+    color: var(--yellow);
+    font-size: var(--h1_font-size);
+
+    margin-bottom: var(--h3_margin-bottom);
+}
+/* P */
+#section3-content-left p{
+    color: var(--yellow);
+
+    margin-bottom: calc(2.5vh + 1vw);
+}
+
+/* H3 */
+#section3-content-left .hr-left{
+    left: 0;
+}
+#section3-content-left .hr-right{
+    right: 48%;
+}
+
+/* Image */
+/* Dart */
+#section3-content img{
+    width: calc(20vh + 6vw);
+}
