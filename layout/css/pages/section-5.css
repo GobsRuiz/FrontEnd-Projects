@@ -1,11 +1,24 @@
 /* Content */
+#section5-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* Div */
 .section5-content-div{
-    width: 25%;
+    width: 20%;
 
     display: inline-block;
+    text-align: left;
 
     position: relative;
+}
+/* NTH-CHILD */
+.section5-content-div:nth-child(2){
+    top: calc(10vh + 3vw);
+}
+.section5-content-div:nth-child(3){
+    top: calc(5vh + 2vw);
 }
 
 /* H3 and p*/
@@ -15,10 +28,10 @@
 }
 
 /* HR */
-.section5-content-div:nth-child(1) .hr-left{
+.section5-content-div .hr-left{
     left: 0;
 }
-.section5-content-div:nth-child(1) .hr-right{
+.section5-content-div .hr-right{
     width: 50%;
     right: 38%;
 }
