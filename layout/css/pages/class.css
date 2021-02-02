@@ -7,8 +7,7 @@
     background-size: fill;
     background-repeat: no-repeat;
 
-    padding-top: calc(5vh + 2vw);
-    padding-bottom: calc(10vh + 3.5vw);
+    padding: calc(6vh + 2.5vw) 0;
     position: relative;
 }
 

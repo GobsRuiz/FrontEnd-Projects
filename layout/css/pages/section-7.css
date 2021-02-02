@@ -1,0 +1,46 @@
+/* Content */
+#section7-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: calc(6vh + 2.5vw);
+}
+
+
+/* Image */
+#section7-content img{
+    width: calc(18vh + 6vw);
+
+    margin-right: calc(8.5vh + 3.5vw);;
+}
+
+
+/* P */
+#section7-content-text .section-p{
+    width: calc(38vh + 15vw);
+
+    text-align: right;
+
+    color: var(--yellow);
+
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* HR */
+#section7 .hr-width10{
+    width: 4%;
+}
+#section7 .hr-width40{
+    width: 15%;
+}
+#section7 .hr-left{
+    left: 40%;
+}
+#section7 .hr-right{
+    right: 40%;
+}
