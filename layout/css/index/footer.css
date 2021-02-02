@@ -1,0 +1,28 @@
+#footer{
+    background-color: var(--yellow);
+
+    padding: calc(1vh + .5vw);
+}
+
+/* Div */
+#footer div{
+    display: inline-block;
+
+    margin-right: calc(2vh + .5vw);
+}
+
+/* P */
+#footer div p{
+    display: inline-block;
+
+    font-size: calc(1.5vh + .5vw);
+}
+#footer div p:nth-child(1){
+    font-weight: bold;
+}
+
+/* P and A */
+#footer div p,
+#footer div p a{
+    color: var(--black);
+}
