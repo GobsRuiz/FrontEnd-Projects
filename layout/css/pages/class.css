@@ -21,6 +21,19 @@
     background-image: url("../../images/background/black/1.svg");
 }
 
+.section-black .section-title h1{
+    color: var(--yellow);
+}
+.section-yellow .section-title h1{
+    color: var(--black);
+}
+.section-black .section-title hr{
+    background-color: var(--yellow);
+}
+.section-yellow .section-title hr{
+    background-color: var(--black);
+}
+
 
 
 

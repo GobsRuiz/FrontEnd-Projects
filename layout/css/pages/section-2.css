@@ -1,21 +1,4 @@
-#section2 .section-title h1{
-    color: var(--black);
-}
-
-
-
-
-
-/* HR */
-#section2 .hr{
-    background-color: var(--black);
-}
-
-
-
-
-
-/* Content */
+* Content */
 /* The style of this section / div 
 is found in the class.css file */
 

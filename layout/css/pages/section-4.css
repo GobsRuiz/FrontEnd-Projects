@@ -28,10 +28,7 @@ is found in the class.css file */
 /* The style of this section / div 
 is found in the class.css file */
 
-/* HR */
-.section4-content-div hr{
-    background-color: var(--black);
-}.section4-content-div .hr-left{
+/* HR */.section4-content-div .hr-left{
     left: 0;
 }.section4-content-div .hr-right{
     right: 48%;

@@ -15,7 +15,6 @@
 
 /* Title */
 #section1 h1{
-    color: var(--yellow);
     font-size: var(--h1_font-size);
 
     margin-bottom: calc(4vh + 1vw);

@@ -1,0 +1,48 @@
+/* Content */
+#section6-content{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Form */
+#section6-content-form{
+    width: calc(30vh + 10vw);
+    height: auto;
+
+    text-align: left;
+
+    margin-right: calc(8.5vh + 3.5vw);
+}
+/* Input label */
+.section6-content-form-inputlabel{
+    margin-bottom: calc(2vh + .8vw);
+}
+/* Input */
+.section6-content-form-inputlabel input{
+    width: 90%;
+
+    color: var(--black);
+    font-size: calc(1.2vh + .5vw);
+    background-color: transparent;
+    border: calc(.2vh + .1vw) solid var(--black);
+
+    padding: calc(.5vh + .3vw) calc(1vh + .5vw);
+}.section6-content-form-inputlabel input::placeholder{
+    color: var(--black);
+}
+/* Label */
+.section6-content-form-inputlabel label{
+    display: block;
+
+    font-size: calc(1.5vh + .5vw);
+    font-weight: bold;
+
+    margin-bottom: calc(.8vh + .4vw);
+}
+
+
+/* Image */
+#section6-content img{
+    width: calc(20vh + 6vw);
+}

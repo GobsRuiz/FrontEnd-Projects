@@ -2,6 +2,8 @@
 #section5-content{
     display: flex;
     justify-content: space-evenly;
+
+    padding-bottom: calc(10vh + 3.5vw);
 }
 
 /* Div */
