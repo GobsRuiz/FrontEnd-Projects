@@ -50,15 +50,15 @@
 
 
 /* Responsive */
-/* 500 */
-@media screen and (max-width: 500px){
+/* 1024 */
+@media screen and (max-width: 1024px){
     /* Image */
     #section7-content img{
         margin-right: calc(2vh + .5vw);
     }
 }
-/* 400 */
-@media screen and (max-width: 500px){
+/* 600 */
+@media screen and (max-width: 600px){
     #section7-content{
         flex-direction: column;
 

@@ -59,7 +59,7 @@ is found in the class.css file */
 
 /* Responsive */
 /* 1024 */
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
     #section4{
         padding-left: calc(8vh + 3.5vw);
         padding-right: calc(8vh + 3.5vw);
