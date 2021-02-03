@@ -11,6 +11,7 @@ is found in the class.css file */
     margin-right: calc(10vh + 3vw);
     position: relative;
 }
+
 /* H3 */
 /* The style of this section / div 
 is found in the class.css file */
@@ -18,6 +19,7 @@ is found in the class.css file */
     color: var(--yellow);
     font-size: var(--h1_font-size);
 }
+
 /* P */
 /* The style of this section / div 
 is found in the class.css file */
@@ -25,7 +27,7 @@ is found in the class.css file */
     color: var(--yellow);
 }
 
-/* H3 */
+/* HR */
 #section3-content-left .hr-left{
     left: 0;
 }
@@ -37,4 +39,51 @@ is found in the class.css file */
 /* Dart */
 #section3-content img{
     width: calc(20vh + 6vw);
+}
+
+
+
+
+
+/* Responsive */
+/* 400 */
+@media screen and (max-width: 400px){
+    /* Content */
+    #section3-content{
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "text"
+        ;
+        grid-template-columns: auto;
+    }
+
+    /* P */
+    #section3-content-left{
+        width: 60%;
+
+        grid-area: text;
+
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    /* HR */
+    #section3-content-left .hr-left{
+        left: 24%;
+    }
+    #section3-content-left .hr-right{
+        right: 24%;
+    }
+
+
+    /* Image */
+    /* Dart */
+    #section3-content img{
+        grid-area: image;
+        
+        margin: 0 auto;
+        margin-bottom: var(--marginBottom);
+    } 
 }

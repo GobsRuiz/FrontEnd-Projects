@@ -13,10 +13,15 @@
 
     /* Main */
     /* H1 */
-    --h1_font-size: calc(2.5vh + .8vw);
+    --h1_font-size: calc(3vh + .8vw);
 
     /* H3 */
-    --h3_font-size: calc(2.2vh + .5vw);
+    --h3_font-size: calc(2.5vh + .5vw);
     --h3_margin-bottom: calc(1vh + .3vw);
+
+    /* P */
+    --p_font-size: calc(1.8vh + .5vw);
+
+    --marginBottom: calc(3vh + .5vw);
 }
 

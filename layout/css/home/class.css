@@ -102,7 +102,7 @@
     margin-bottom: var(--h3_margin-bottom);
 }
 .section-p{
-    font-size: calc(1.5vh + .5vw);
+    font-size: var(--p_font-size);
 
     margin-bottom: calc(2vh + .5vw);
 }
