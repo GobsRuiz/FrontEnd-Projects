@@ -43,8 +43,8 @@
 
 
 /* Responsive */
-/* 400 */
-@media screen and (max-width: 400px){
+/* 1024 */
+@media screen and (max-width: 1024px){
     /* Content */
     #section5-content{
         flex-direction: column;

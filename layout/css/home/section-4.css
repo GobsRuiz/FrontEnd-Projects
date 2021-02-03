@@ -58,8 +58,8 @@ is found in the class.css file */
 
 
 /* Responsive */
-/* 900 */
-@media screen and (max-width: 800px) {
+/* 1024 */
+@media screen and (max-width: 1024) {
     #section4{
         padding-left: calc(8vh + 3.5vw);
         padding-right: calc(8vh + 3.5vw);
@@ -78,7 +78,7 @@ is found in the class.css file */
     }
 }
 /* 400 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     #section4{
         padding-left: calc(6vh + 2.5vw);
         padding-right: calc(6vh + 2.5vw);

@@ -47,7 +47,7 @@ is found in the class.css file */
 }
 
 /* 400 */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     #section2-content{
         flex-direction: column;
     }
