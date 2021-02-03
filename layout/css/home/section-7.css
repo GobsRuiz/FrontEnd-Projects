@@ -61,6 +61,8 @@
 @media screen and (max-width: 500px){
     #section7-content{
         flex-direction: column;
+
+        margin-bottom: calc(2vh + .5vw);
     }
 
     /* Image */

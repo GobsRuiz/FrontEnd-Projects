@@ -2,6 +2,8 @@
 #section6-content{
     display: flex;
     justify-content: center;
+
+    padding: 0 calc(2vh + .5vw);
 }
 
 
@@ -45,4 +47,42 @@
 /* Image */
 #section6-content img{
     width: calc(20vh + 6vw);
+}
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 370px) {
+    /* Content */
+    #section6-content{
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "form"
+        ;
+    }
+
+    /* Form */
+    #section6-content-form{
+        grid-area: form;
+
+        text-align: center;
+
+        margin: 0 auto;
+    }
+    /* Label */
+    .section6-content-form-inputlabel label{
+        text-align: left;
+    }
+
+
+    /* Image */
+    #section6-content img{
+        grid-area: image;
+        
+        margin: 0 auto;
+        margin-bottom: var(--marginBottom);
+    }
 }

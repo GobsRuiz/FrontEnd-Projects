@@ -15,7 +15,7 @@
 #footer div p{
     display: inline-block;
 
-    font-size: calc(1.5vh + .5vw);
+    font-size: var(--p_font-size);
 }
 #footer div p:nth-child(1){
     font-weight: bold;
