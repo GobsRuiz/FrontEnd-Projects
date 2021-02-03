@@ -17,12 +17,50 @@ is found in the class.css file */
     text-align: right;
 }
 
-/* H3 */
-/* The style of this section / div 
-is found in the class.css file */
-
-/* P */
+/* H3 and P*/
 /* The style of this section / div 
 is found in the class.css file */
 
 
+
+
+
+/* Responsive */
+/* 650 */
+@media screen and (max-width: 650px){
+    /* Content */
+    #section2-content{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Image */
+    /* Rocket */
+    #section2-content img{
+        margin-right: 0;
+    }
+
+    /* Right */
+    #section2-content-right{
+        width: 40%;
+    }
+}
+
+/* 400 */
+@media screen and (max-width: 400px){
+    #section2-content{
+        flex-direction: column;
+    }
+
+    /* Image */
+    /* Rocket */
+    #section2-content img{
+        margin-bottom: calc(3vh + .5vw);
+    }
+    /* Right */
+    #section2-content-right{
+        width: 50%;
+
+        text-align: center;
+    }
+}

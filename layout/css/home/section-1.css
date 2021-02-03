@@ -30,3 +30,24 @@
     top: 2%;
     left: 15%;
 }
+
+
+
+
+
+/* Responsive */
+/* 600 */
+@media screen and (max-width: 600px){
+    /* Content */
+    #section1-content{
+        width: 60%;
+    }
+}
+
+/* 400 */
+@media screen and (max-width: 400px){
+    /* Content */
+    #section1-content{
+        width: 80%;
+    }
+}
