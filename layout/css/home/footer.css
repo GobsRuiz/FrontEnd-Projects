@@ -9,6 +9,7 @@
     display: inline-block;
 
     margin-right: calc(2vh + .5vw);
+    padding: calc(.4vh + .1vw);
 }
 
 /* P */

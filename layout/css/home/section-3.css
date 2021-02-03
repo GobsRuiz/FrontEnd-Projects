@@ -46,6 +46,52 @@ is found in the class.css file */
 
 
 /* Responsive */
+/* 600 */
+@media screen and (min-width: 600px) {
+    /* 800 */
+    @media screen and (min-height: 800px){
+        /* Content */
+        #section3-content{
+            display: grid;
+            grid-template-areas: 
+                "image"
+                "text"
+            ;
+            grid-template-columns: auto;
+        }
+
+        /* P */
+        #section3-content-left{
+            width: 60%;
+
+            grid-area: text;
+
+            text-align: center;
+
+            margin: 0 auto;
+        }
+
+        /* HR */
+        #section3-content-left .hr-left{
+            left: 24%;
+        }
+        #section3-content-left .hr-right{
+            right: 24%;
+        }
+
+
+        /* Image */
+        /* Dart */
+        #section3-content img{
+            grid-area: image;
+            
+            margin: 0 auto;
+            margin-bottom: var(--marginBottom);
+        } 
+    }
+}
+
+
 /* 400 */
 @media screen and (max-width: 420px){
     /* Content */

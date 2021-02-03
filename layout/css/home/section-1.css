@@ -43,6 +43,14 @@
         width: 60%;
     }
 }
+@media screen and (min-width: 600px) {
+    @media screen and (min-height: 800px){
+        /* Content */
+        #section1-content{
+            width: 70%;
+        }
+    } 
+}
 
 /* 400 */
 @media screen and (max-width: 400px){

@@ -57,12 +57,12 @@
         margin-right: calc(2vh + .5vw);
     }
 }
-/* 600 */
-@media screen and (max-width: 600px){
+/* 800 */
+@media screen and (max-width: 800px){
     #section7-content{
         flex-direction: column;
 
-        margin-bottom: calc(2vh + .5vw);
+        margin-bottom: calc(2vh + 1.5vw);
     }
 
     /* Image */

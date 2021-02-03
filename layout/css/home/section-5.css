@@ -43,13 +43,13 @@
 
 
 /* Responsive */
-/* 1024 */
-@media screen and (max-width: 1024px){
+/* 800 */
+@media screen and (max-width: 800px){
     /* Content */
     #section5-content{
         flex-direction: column;
 
-        padding: 0 calc(3vh + .5vw);
+        padding: 0 calc(3vh + .8vw);
     }
     
     /* Div */
