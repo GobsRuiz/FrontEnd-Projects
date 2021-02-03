@@ -26,10 +26,10 @@
 .section-yellow .section-title h1{
     color: var(--black);
 }
-.section-black .section-title hr{
+.section-black hr{
     background-color: var(--yellow);
 }
-.section-yellow .section-title hr{
+.section-yellow hr{
     background-color: var(--black);
 }
 

@@ -28,7 +28,8 @@ is found in the class.css file */
 /* The style of this section / div 
 is found in the class.css file */
 
-/* HR */.section4-content-div .hr-left{
+/* HR */
+.section4-content-div .hr-left{
     left: 0;
 }.section4-content-div .hr-right{
     right: 48%;
@@ -49,4 +50,48 @@ is found in the class.css file */
 }
 #section4-content-binocular img{
     width: calc(35vh + 10vw);
+}
+
+
+
+
+
+/* Responsive */
+/* 900 */
+@media screen and (max-width: 800px) {
+    #section4{
+        padding-left: calc(8vh + 3.5vw);
+        padding-right: calc(8vh + 3.5vw);
+    }
+
+    /* Content */
+    /* Div */
+    .section4-content-div{
+        width: 55%;
+    }
+
+    /* Image */
+    /* Binocular */
+    #section4-content-binocular img{
+        width: calc(27vh + 10vw);
+    }
+}
+/* 400 */
+@media screen and (max-width: 400px) {
+    #section4{
+        padding-left: calc(6vh + 2.5vw);
+        padding-right: calc(6vh + 2.5vw);
+    }
+
+    /* Content */
+    /* Div */
+    .section4-content-div{
+        width: 70%;
+    }
+
+    /* Image */
+    /* Binocular */
+    #section4-content-binocular img{
+        width: calc(22vh + 9vw);
+    }
 }

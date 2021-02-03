@@ -37,3 +37,31 @@
     width: 50%;
     right: 38%;
 }
+
+
+
+
+
+/* Responsive */
+/* 400 */
+@media screen and (max-width: 400px){
+    /* Content */
+    #section5-content{
+        flex-direction: column;
+
+        padding: 0 calc(3vh + .5vw);
+    }
+    
+    /* Div */
+    .section5-content-div{
+        width: 70%;
+        margin-bottom: calc(5vh + 1.5vw);
+    }.section5-content-div:last-child{
+        margin-bottom: 0;
+    }
+    /* NTH-CHILD */
+    .section5-content-div:nth-child(2),
+    .section5-content-div:nth-child(3){
+        top: 0;
+    }
+}

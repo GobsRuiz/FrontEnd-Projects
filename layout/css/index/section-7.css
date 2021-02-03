@@ -12,7 +12,7 @@
 #section7-content img{
     width: calc(18vh + 6vw);
 
-    margin-right: calc(8.5vh + 3.5vw);;
+    margin-right: calc(8.5vh + 3.5vw);
 }
 
 
@@ -43,4 +43,33 @@
 }
 #section7 .hr-right{
     right: 40%;
+}
+
+
+
+
+
+/* Responsive */
+/* 500 */
+@media screen and (max-width: 500px){
+    /* Image */
+    #section7-content img{
+        margin-right: calc(2vh + .5vw);
+    }
+}
+/* 400 */
+@media screen and (max-width: 500px){
+    #section7-content{
+        flex-direction: column;
+    }
+
+    /* Image */
+    #section7-content img{
+        margin-right: 0;
+    }
+
+    /* P */
+    #section7-content-text .section-p{
+        text-align: center;
+    }
 }
