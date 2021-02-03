@@ -50,7 +50,7 @@ is found in the class.css file */
 #section4-content-binocular img{
     width: calc(35vh + 10vw);
 
-    margin-bottom: calc(1vh + .5vw);
+    margin-bottom: calc(3vh + .5vw);
 }
 
 
@@ -87,7 +87,7 @@ is found in the class.css file */
     /* Content */
     /* Div */
     .section4-content-div{
-        width: 70%;
+        width: 80%;
     }
 
     /* Image */
