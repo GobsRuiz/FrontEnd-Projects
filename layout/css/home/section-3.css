@@ -46,8 +46,8 @@ is found in the class.css file */
 
 
 /* Responsive */
-/* 600 */
-@media screen and (min-width: 600px) {
+/* 1024 */
+@media screen and (max-width: 1024px) {
     /* 800 */
     @media screen and (min-height: 800px){
         /* Content */
@@ -92,7 +92,7 @@ is found in the class.css file */
 }
 
 
-/* 400 */
+/* 420 */
 @media screen and (max-width: 420px){
     /* Content */
     #section3-content{

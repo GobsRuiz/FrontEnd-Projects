@@ -58,14 +58,36 @@ is found in the class.css file */
 
 
 /* Responsive */
-/* 1400 */
-@media screen and (min-width: 1200px){
-    /* 800 */
+/* 1024 */
+@media screen and (min-width: 1024px){
+    @media screen and (max-width: 1024px){
+        @media screen and (min-height: 1366px){
+            #section4{
+                padding-left: calc(8vh + 2vw);
+                padding-right: calc(8vh + 2 vw);
+            }
+
+            /* Content */
+            /* Div */
+            .section4-content-div{
+                width: 70%;
+            }
+
+            /* Image */
+            /* Binocular */
+            #section4-content-binocular img{
+                width: calc(28vh + 9vw);
+            }
+        }
+    }
+}
+@media screen and (max-width: 124px){
+    /* 800px */
     @media screen and (min-height: 800px){
         /* Content */
         /* Div */
         .section4-content-div{
-            width: 55%;
+            width: 85%;
         }
     }
 }
@@ -88,18 +110,6 @@ is found in the class.css file */
         width: calc(27vh + 10vw);
     }
 }
-/* 600 */
-@media screen and (min-width: 600px){
-    /* 800px */
-    @media screen and (min-height: 800px){
-        /* Content */
-        /* Div */
-        .section4-content-div{
-            width: 85%;
-        }
-    }
-}
-
 
 /* 400 */
 @media screen and (max-width: 420px) {
