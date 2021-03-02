@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0s;
+    }
+
+    .sections{
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section1{
+        background-color: red;
+
+        padding: 0 2vh;
+    }
+    #section1 h1{
+        font-size: 6vh;
+
+        margin-bottom: 3vh;
+    }
+    #section1 p{
+        font-size: 3vh;
+    }
+
+
+
+    #section2{
+        background-color: orange;
+
+        padding: 0 1.5vw;
+    }
+    #section2 h1{
+        font-size: 3vw;
+
+        margin-bottom: 1.5vw;
+    }
+    #section2 p{
+        font-size: 1.5vw;
+    }
+
+
+
+    #section3{
+        background-color: green;
+
+        padding: 0 calc(.5vh + 1vw);
+    }
+    #section3 h1{
+        font-size: calc(1vh + 2.5vw);
+
+        margin-bottom: calc(.5vw + 1vw);
+    }
+    #section3 p{
+        font-size: calc(.5vh + 1.4vw);
+    }
+</style>
+<body>
+
+    <section id="section1" class="sections">
+        <h1>
+            Apenas VH
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+
+    <section id="section2" class="sections">
+        <h1>
+            Apenas VW
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+
+    <section id="section3" class="sections">
+        <h1>
+            Cálculo - VH + VW
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+</body>
+</html>
