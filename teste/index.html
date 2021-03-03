@@ -27,7 +27,7 @@
         padding: 0 2vh;
     }
     #section1 h1{
-        font-size: 6vh;
+        font-size: clamp(2.5vw, 3vw, 4vw);
 
         margin-bottom: 3vh;
     }
@@ -40,7 +40,7 @@
     #section2{
         background-color: orange;
 
-        padding: 0 1.5vw;
+        padding: 0 1rem;
     }
     #section2 h1{
         font-size: 3vw;
@@ -66,8 +66,128 @@
     #section3 p{
         font-size: calc(.5vh + 1.4vw);
     }
+
+
+
+    #section4{
+        background-color: indigo;
+
+        padding: 0 3%;
+    }
+    #section4 h1{
+        font-size: 250%;
+
+        margin-bottom: calc(.5vw + 1vw);
+    }
+    #section4 p{
+        font-size: 130%;
+    }
+
+
+
+    .sectionCards{
+        height: 100vh;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sectionCards_card{
+        max-width: 20%;
+
+        background-color: #fff;
+        box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.2);
+
+        padding: 30px 20px;
+    }
+
+    .sectionCards_card h3{
+        font-size: 1.8vw;
+        margin-bottom: 5px;
+    }
+    .sectionCards_card p{
+        font-size: 1.2vw;
+    }
+
+    #sectionCard2{
+        background-color: royalblue;
+    }
+    #sectionCard2 .sectionCards_card h3{
+        font-size: 1.5em;
+    }
+    #sectionCard2 .sectionCards_card p{
+        font-size: 1em;
+    }
 </style>
 <body>
+
+    <section id="sectionCard1" class="sectionCards">
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+    </section>
+
+    <section id="sectionCard2" class="sectionCards">
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+        <div class="sectionCards_card">
+            <h3>
+                Lorem Ipsum
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repellat, nemo illo sint molestiae cupiditate at ut expedita rem distinctio. .
+            </p>
+        </div>
+    </section>
 
     <section id="section1" class="sections">
         <h1>
@@ -110,5 +230,57 @@
             vitae earum nemo?
         </p>
     </section>
+
+    <section id="section4" class="sections">
+        <h1>
+           %%%%%%%%%%%%
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+
+    <section id="section5" class="sections">
+        <h1>
+           fittext
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+
+    <section id="section6" class="sections">
+        <h1>
+           fittext
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Expedita laudantium magnam repellendus soluta fuga atque, 
+            tenetur enim necessitatibus, praesentium dignissimos 
+            voluptatibus laborum quisquam suscipit officiis odit non 
+            vitae earum nemo?
+        </p>
+    </section>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.fittext.js"></script>
+    <script>
+        jQuery("#section5").fitText(3);
+        jQuery("#section6 h1").fitText(1, {minFontSize: '40px', maxFontSize: '40px'});
+        jQuery("#section6 p").fitText(1, {minFontSize: '10px', maxFontSize: '25px'});
+    </script>
 </body>
 </html>
