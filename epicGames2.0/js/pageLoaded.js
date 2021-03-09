@@ -3,6 +3,8 @@ function functionPageLoaded() {
     let logo = document.getElementById("pageLoaded")
 
 
+    // Transition 
+    logo.style.transition = "opacity 2s ease-in";
 
     // Envent listener - load
     window.addEventListener("load", () => {
