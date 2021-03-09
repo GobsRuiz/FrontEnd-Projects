@@ -1,5 +1,6 @@
 /* News or novelty */
-#homeSection_news{
+/* Cards */
+#homeSection_news_cards{
     display: flex;
     overflow-x: scroll;
     
@@ -7,19 +8,19 @@
 }
 /* Scrollbar */
 /* width */
-#homeSection_news::-webkit-scrollbar {
+#homeSection_news_cards::-webkit-scrollbar {
     height: .4rem;
 }
 
 /* Handle */
-#homeSection_news::-webkit-scrollbar-thumb {
+#homeSection_news_cards::-webkit-scrollbar-thumb {
     background-color: #888;
 
     border-radius: 20rem;
 }
 
 /* Handle on hover */
-#homeSection_news::-webkit-scrollbar-thumb:hover {
+#homeSection_news_cards::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
